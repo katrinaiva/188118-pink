@@ -5,14 +5,14 @@
 		<title>HTML Academy: Пинк</title>
 		<link href="css/style.css" rel="stylesheet">
 	</head>
-	<body>
+	<body class="inner">
 		<header class="page-header">
 			<div class="page-header__logo">
 				<a href="index.html" title="Переход на главную">
-				<img src="img/logotype-white-mobile.png" width="75" height="22" alt="Pink">
+					<img src="img/logotype-white-mobile.png" width="75" height="22" alt="Pink">
 				</a>
 			</div>
-			<nav class="main-menu main-menu_closed main-menu_nojs">
+			<nav class="main-menu main-menu_closed main-menu--nojs">
 				<div class="main-menu__toggle">
 					<button type="button">Открыть/закрыть меню</button>
 				</div>
@@ -20,7 +20,7 @@
 					<li class="main-menu__list">
 						<a href="index.html" title="Переход на главную">Главная</a>
 					</li>
-					<li class="main-menu__list  main-menu__list_active">
+					<li class="main-menu__list  main-menu__list--active">
 						<a>Фотографиии</a>
 					</li>
 					<li class="main-menu__list">
@@ -31,95 +31,111 @@
 					</li>
 				</ul>
 			</nav>
+			<h1 class="page-header__title">Фотографии пользователей</h1>
 		</header>
-		<main>
+		<main class="page-main">
 			<section class="photos">
-				<h1 class="photos__title">Фотографии пользователей</h1>
-				<p>Взгляните на фотографии, которые выкладывают пользователи!  Видите, как не хватает ваших?</p>
+				<p class="photos__text">Взгляните на фотографии, которые выкладывают пользователи! <br> Видите, как не хватает ваших?</p>
 					<div class="photos__lists">
 						<blockquot class="photos__list">
 							<div class="photos__auhor-foto">
 								<a href="http://placehold.it/150x100">
-									<img src="http://placehold.it/150x100" width="" height="" alt="">
+									<img src="http://placehold.it/150x100" width="280" height="140" alt="">
 								</a>
 							</div>
+							<div class="photos__content">
 							<cite class="photos__auhor-name">Анна</cite>
 							<span class="photos__time">(5 минут назад)</span>
 							<p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
 							<a><i></i><span class="photos__like">Нравится:</span> <span class="photos__like-count">215</span></a>
+							</div>
 						</blockquot>
 						<blockquot class="photos__list">
 							<div class="photos__auhor-foto">
 								<a href="http://placehold.it/150x100">
-									<img src="http://placehold.it/150x100" width="" height="" alt="">
+									<img src="http://placehold.it/150x100" width="280" height="140" alt="">
 								</a>
 							</div>
+							<div class="photos__content">
 							<cite class="photos__auhor-name">Левон</cite>
 							<span class="photos__time">(5 часов назад)</span>
 							<p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
 							<a><i></i><span class="photos__like">Нравится:</span> <span class="photos__like-count">356</span></a>
+							</div>
 						</blockquot>
 						<blockquot class="photos__list">
 							<div class="photos__auhor-foto">
 								<a href="http://placehold.it/150x100">
-									<img src="http://placehold.it/150x100" width="" height="" alt="">
+									<img src="http://placehold.it/150x100" width="280" height="140" alt="">
 								</a>
 							</div>
+							<div class="photos__content">
 							<cite class="photos__auhor-name">Антон</cite>
 							<span class="photos__time">(13 часов назад)</span>
 							<p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
 							<a><i></i><span class="photos__like">Нравится:</span> <span class="photos__like-count">666</span></a>
+							</div>
 						</blockquot>
 						<blockquot class="photos__list">
 							<div class="photos__auhor-foto">
 								<a href="http://placehold.it/150x100">
-									<img src="http://placehold.it/150x100" width="" height="" alt="">
+									<img src="http://placehold.it/150x100" width="280" height="140" alt="">
 								</a>
 							</div>
+							<div class="photos__content">
 							<cite class="photos__auhor-name">Борис</cite>
 							<span class="photos__time">(20 часов назад)</span>
 							<p>Здесь могла быть ваша цитата о высоком и вечном.</p>
 							<a><i></i><span class="photos__like">Нравится:</span> <span class="photos__like-count">215</span></a>
+							</div>
 						</blockquot>
 						<blockquot class="photos__list">
 							<div class="photos__auhor-foto">
 								<a href="http://placehold.it/150x100">
-									<img src="http://placehold.it/150x100" width="" height="" alt="">
+									<img src="http://placehold.it/150x100" width="280" height="140" alt="">
 								</a>
 							</div>
+							<div class="photos__content">
 							<cite class="photos__auhor-name">Сергей</cite>
 							<span class="photos__time">(25 часов назад)</span>
 							<p>Самая кубанская в мире!</p>
 							<a><i></i><span class="photos__like">Нравится:</span> <span class="photos__like-count">4</span></a>
+							</div>
 						</blockquot>
 						<blockquot class="photos__list">
 							<div class="photos__auhor-foto">
 								<a href="http://placehold.it/150x100">
-									<img src="http://placehold.it/150x100" width="" height="" alt="">
+									<img src="http://placehold.it/150x100" width="280" height="140" alt="">
 								</a>
 							</div>
+							<div class="photos__content">
 							<cite class="photos__auhor-name">Максим</cite>
 							<span class="photos__time">(40 часов назад)</span>
 							<p>Где снег-то?</p>
 							<a><i></i><span class="photos__like">Нравится:</span> <span class="photos__like-count">150</span></a>
+							</div>
 						</blockquot>
 						<blockquot class="photos__list">
 							<div class="photos__auhor-foto">
 								<a href="http://placehold.it/150x100">
-								<img src="http://placehold.it/150x100" width="" height="" alt="">
+								<img src="http://placehold.it/150x100" width="280" height="140" alt="">
 								</a>
 							</div>
+							<div class="photos__content">
 							<cite class="photos__auhor-name">Надежда </cite>
 							<span class="photos__time">(45 часов назад)</span>
 							<p>Всем GM и взаимные лайки!</p>
 							<a><i></i><span class="photos__like">Нравится:</span> <span class="photos__like-count">2560</span></a>
+							</div>
 						</blockquot>
 					</div>
+					<p class="photos__text">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!
+				 </p>
 			</section>
-			<section class="loading-photo">
-				<form action="/echo" method=get>
+			<section class="loading-photos">
+				<form  class="loading-photo" action="/echo" method=get>
 					<div class="loading-photo__result">
-						<img src="http://placehold.it/150x100" width="" height="" alt="">
+						<img src="http://placehold.it/150x100" width="280" height="378" alt="">
 					</div>
 					<div class="loading-photo__filter">
 						<div class="loading-photo__lists">
@@ -131,10 +147,10 @@
 							<div class="loading-photo__scale">бегунок</div>
 						</div>
 					</div>
-					<div class="btn btn_submit">
+					<div class="btn  loading-photo__btn loading-photo__btn--submit">
 						<button type="submit">Запостить</button>
 					</div>
-					<div class="btn  btn_reset">
+					<div class="btn  loading-photo__btn loading-photo__btn--reset">
 						<button type="reset">Отмена</button>
 					</div>
 				</form>

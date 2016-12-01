@@ -5,14 +5,14 @@
 		<title>HTML Academy: Пинк</title>
 		<link href="css/style.css" rel="stylesheet">
 	</head>
-	<body>
+	<body class="inner">
 		<header class="page-header">
 			<div class="page-header__logo">
 				<a href="index.html" title="Переход на главную">
 					<img src="img/logotype-white-mobile.png" width="75" height="22" alt="Pink">
 				</a>
 			</div>
-			<nav class="main-menu main-menu_closed main-menu_nojs">
+			<nav class="main-menu  main-menu--closed  main-menu--nojs">
 				<div class="main-menu__toggle">
 					<button type="button">Открыть/закрыть меню</button>
 				</div>
@@ -23,7 +23,7 @@
 					<li class="main-menu__list">
 						<a href="photo.html" title="Переход на старницу фотографии">Фотографиии</a>
 					</li>
-					<li class="main-menu__list main-menu__list_active">
+					<li class="main-menu__list main-menu__list--active">
 						<a>Конкурс</a>
 					</li>
 					<li class="main-menu__list">
@@ -32,7 +32,7 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
+		<main class="page-main">
 			<section class="forms">
 				<h1 class="forms__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
 				<p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполни</p>
@@ -61,11 +61,11 @@
 					<fieldset class="form__crazy">
 						<legend class="form__crazy-title">Ваши безбашенные достижения в путешествии</legend>
 						<div>
-							<input class="form__crazy-input form__crazy-input_pink" type="checkbox" id="selfie" name="selfie" checked>
+							<input class="form__crazy-input form__crazy-input--pink" type="checkbox" id="selfie" name="selfie" checked>
 							<label class="form__crazy-label" for="selfie">Сделал селфи с акулой</label>
 						</div>
 						<div>
-							<input class="form__crazy-input form__crazy-input_pink" type="checkbox" id="burned" name="burned" checked>
+							<input class="form__crazy-input form__crazy-input--pink" type="checkbox" id="burned" name="burned" checked>
 							<label class="form__crazy-label" for="burned">Обгорел на пляже</label>
 						</div>
 						<div>
@@ -102,7 +102,7 @@
 					<fieldset class="form__app">
 						<legend class="form__app-title">С каким приложением путешествовали?</legend>
 						<div>
-							<input class="form__app-input  form__app-input_pink"  type="radio" id="ios" name="application" value="ios" checked>
+							<input class="form__app-input  form__app-input--pink"  type="radio" id="ios" name="application" value="ios" checked>
 							<label class="form__app-label" for="ios">Pink для iOS</label>
 						</div>
 						<div>

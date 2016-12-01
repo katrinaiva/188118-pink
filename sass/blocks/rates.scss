@@ -1,0 +1,35 @@
+.rates {
+  background: $gray-light;
+}
+
+.rates-table__value {
+  padding: 17px;
+  background: $color-main;
+  color: #ffffff;
+  text-transform: $text-transform;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  border: 1px solid #e5e5e5;
+
+  span {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: lighter;
+  }
+
+}
+
+.rates-table__field {
+  padding: 17px;
+  color: $color-main;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: $text-transform;
+  border: 1px solid #e5e5e5;
+}
+
+.rates-table {
+  width: 720px;
+  border-collapse: collapse;
+}

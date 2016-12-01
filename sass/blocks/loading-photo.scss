@@ -1,0 +1,20 @@
+.loading-photo {
+  background-color: $gray-light;
+  border-top: 1px solid $gray-light;
+}
+
+.loading-photo__result {
+  margin: 20px;
+}
+
+.loading-photo__btn {
+
+  &--submit {
+    border: 2px solid $color-secondary;
+  }
+
+  &--reset {
+    border: 2px solid $gray;
+  }
+
+}

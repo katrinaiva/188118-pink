@@ -1,0 +1,36 @@
+
+.features-app__texts {
+  background: $color-link;
+  color: $color-main;
+}
+
+.features-app__text {
+  font-size: $font-size--big;
+  line-height: $font-size--big;
+}
+
+.features-app__lists {
+  @include reset;
+  list-style: none;
+  margin-bottom: 46px;
+  min-height: 788px;
+  background: #f2f2f2 url(/img/iphone-screen-mobile@1x.png) no-repeat 50% 100%;
+  text-align: center;
+}
+
+.features-app__list-title {
+  @include reset;
+  color: #000000;
+  font-size: $font-size;
+  line-height: $font-size--big;
+
+  p {
+  color: $color-link;
+  font-size: $font-size--small;
+  line-height: $font-size--big;
+  }
+}
+
+.features-app__list {
+  padding: 12px 25px;
+}

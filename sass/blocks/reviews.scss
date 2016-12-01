@@ -1,0 +1,28 @@
+.reviews__wrapper {
+  background: $color-link;
+}
+
+.reviews__auhor-name {
+  color: #000000;
+  font-size: $font-size;
+  font-style: normal;
+  line-height: $line-height;
+  font-weight: bold;
+}
+
+.reviews__lists {
+  text-align: center;
+
+  p{
+  font-size: $font-size--small;
+  line-height: $line-height;
+  color: $color-main;
+  }
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+}

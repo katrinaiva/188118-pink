@@ -1,0 +1,14 @@
+@mixin link() {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin hidden {
+  font-size: 0;
+}

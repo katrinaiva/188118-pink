@@ -1,0 +1,28 @@
+
+
+.page-footer__title {
+  color: $color-main;
+  font-size: $font-size--big;
+  line-height: $line-height;
+  font-weight: normal;
+}
+
+.page-footer__contact {
+  color: $color-secondary;
+  font-size: $font-size--big;
+  line-height: $line-height;
+  font-weight: 100;
+
+  &--link {
+    text-decoration: none;
+  }
+}
+
+.page-footer__contacts {
+
+  b {
+    color: $color-main;
+    font-size: $font-size;
+    font-weight: bold;
+  }
+}

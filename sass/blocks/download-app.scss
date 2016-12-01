@@ -1,0 +1,43 @@
+.download-app {
+  background: #1d2631;
+}
+
+.download-app__link {
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    @include link;
+    padding: 15px 29px;
+    font-size: $font-size;
+    line-height: $font-size;
+
+    &:hover {
+      background-color: $color-link;
+      color: $color-link--hover;
+    }
+
+    &:active {
+      color: $btn-down;
+    }
+  }
+}
+
+.download-app__title {
+  @include hidden;
+}
+
+.download-app__lists {
+  text-align: center;
+}
+.download-app__list {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.download-app__text {
+  font-size: $font-size--small;
+  line-height: $font-size--big;
+  font-weight: 200;
+  color: $color-link;
+  text-align: center;
+}
