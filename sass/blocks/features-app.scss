@@ -5,8 +5,11 @@
 }
 
 .features-app__text {
+  padding: 5px 58px;
   font-size: $font-size--big;
   line-height: $font-size--big;
+  font-weight: lighter;
+  text-align: center;
 }
 
 .features-app__lists {

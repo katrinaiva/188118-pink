@@ -3,11 +3,14 @@
 }
 
 .download-app__link {
+  text-align: center;
   a {
     display: inline-block;
     vertical-align: middle;
     @include link;
-    padding: 15px 29px;
+    margin-bottom: 35px;
+    margin-top: 30px;
+    padding: 15px 0;
     font-size: $font-size;
     line-height: $font-size;
 
@@ -37,7 +40,7 @@
 .download-app__text {
   font-size: $font-size--small;
   line-height: $font-size--big;
-  font-weight: 200;
+  font-weight: 300;
   color: $color-link;
   text-align: center;
 }

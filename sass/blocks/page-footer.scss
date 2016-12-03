@@ -1,10 +1,9 @@
-
-
 .page-footer__title {
   color: $color-main;
   font-size: $font-size--big;
   line-height: $line-height;
-  font-weight: normal;
+  font-weight: lighter;
+  text-align: center;
 }
 
 .page-footer__contact {
@@ -13,16 +12,21 @@
   line-height: $line-height;
   font-weight: 100;
 
+
   &--link {
     text-decoration: none;
   }
 }
 
 .page-footer__contacts {
-
+   text-align: center;
   b {
     color: $color-main;
     font-size: $font-size;
     font-weight: bold;
   }
+}
+
+.page-footer__copyright {
+  text-align: center;
 }

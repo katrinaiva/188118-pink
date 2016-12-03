@@ -10,5 +10,16 @@
 }
 
 @mixin hidden {
-  font-size: 0;
+  display: none;
+}
+
+@mixin form {
+  font-size: $font-size--small;
+  text-transform: $text-transform;
+  color: $color-secondary;
+}
+
+@mixin contener {
+  width: 280px;
+  padding: 0 20px;
 }

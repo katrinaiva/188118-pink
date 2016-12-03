@@ -1,0 +1,14 @@
+.btn-form {
+  margin: 0 auto;
+  width: 280px;
+  height: 62px;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-transform: $text-transform;
+  background-color: $btn-form;
+  font-weight: bold;
+  color: $color-link;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}

@@ -1,0 +1,157 @@
+
+.visually-hidden {
+  @include hidden;
+}
+
+.form__fieldset {
+  border: none;
+   @include contener;
+}
+
+.form__information-label {
+  @include form;
+  padding-left: 20px;
+  line-height: $line-height;
+}
+
+.form__information-input {
+  input {
+    width: 232px;
+    margin-bottom: 15px;
+    padding: 15px 22px;
+    font-size: $font-size;
+//    font-weight: normal;
+    font-family: Open Sans, Arial, sans-serif;
+    line-height: $line-height;
+    color: $color-main;
+    border: none;
+    outline: none;
+    border: 2px solid $gray-input;
+}
+  p {
+    text-align: center;
+  }
+}
+
+.form {
+
+
+  input, textarea {
+    &::-webkit-input-placeholder {
+      color: $color-main;
+    }
+
+    &:-moz-placeholder {
+      color: $color-main;
+    }
+
+    &::-moz-placeholder {
+      color: $color-main;
+    }
+
+    &:-ms-input-placeholder {
+      color: $color-main;
+    }
+  }
+
+}
+
+.form__wrapper {
+  background-color: $gray-light;
+  border-top: 1px solid $gray-light;
+  margin-bottom: 10px;
+}
+
+.form__crazy-title, .form__recall-title {
+  @include form;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 30px;
+  line-height: $font-size;
+  text-align: center;
+}
+
+.form__app-title {
+  @include form;
+  padding: 30px 50px;
+  line-height: $font-size;
+  text-align: center;
+}
+
+.form__textarea {
+  width: 236px;
+  height: 154px;
+  padding: 23px 20px;
+  font-family: Open Sans, Arial, sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color-main;
+  border: none;
+  outline: none;
+  border: 2px solid $gray-input;
+}
+
+.form__p {
+  text-transform: $text-transform;
+  font-size: $font-size--small;
+  line-height: $line-height;
+  text-align: center;
+}
+.form__span {
+    color: $color-secondary;
+  }
+
+.form__selection-input {
+  display: none;
+}
+
+.form__selection-input {
+  &+.form__selection-label {
+    position: relative;
+    display: block;
+    padding-left: 70px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color-main;
+    cursor: pointer;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background: url(/img/radio-checkbox.png) no-repeat;
+    }
+  }
+}
+
+.form__selection-input {
+  &:checked {
+    &+.form__selection-label {
+      &::before {
+        background: url(/img/radio-checkbox_hover.png) no-repeat;
+      }
+    }
+  }
+}
+
+.form__selection-input {
+  &:checked {
+    &+.form__selection-label {
+      &:hover{
+        &::before {
+          background: $color-secondary url(/img/radio-checkbox_hover.png) no-repeat;
+        }
+      }
+    }
+  }
+}
+
+.form__btn {
+  @include contener;
+}
