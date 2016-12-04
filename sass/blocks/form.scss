@@ -1,11 +1,10 @@
-
 .visually-hidden {
   @include hidden;
 }
 
 .form__fieldset {
   border: none;
-   @include contener;
+  @include container;
 }
 
 .form__information-label {
@@ -34,8 +33,6 @@
 }
 
 .form {
-
-
   input, textarea {
     &::-webkit-input-placeholder {
       color: $color-main;
@@ -53,7 +50,6 @@
       color: $color-main;
     }
   }
-
 }
 
 .form__wrapper {
@@ -97,6 +93,7 @@
   line-height: $line-height;
   text-align: center;
 }
+
 .form__span {
     color: $color-secondary;
   }
@@ -153,5 +150,5 @@
 }
 
 .form__btn {
-  @include contener;
+  @include container;
 }
