@@ -1,0 +1,18 @@
+.btn {
+  width: 280px;
+//  height: 48px;
+  margin: 10px auto;
+  border: 2px solid $color-link;
+  border-radius: 25px;
+  text-align: center;
+
+  &--down {
+    &:hover {
+      background-color: $color-link;
+    }
+
+    &:active {
+      background-color: $color-link;
+    }
+  }
+}

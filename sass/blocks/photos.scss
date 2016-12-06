@@ -1,0 +1,60 @@
+.photos__text {
+  @include reset;
+  padding: 45px 39px;
+  font-size: $font-size--small;
+  line-height: $line-height;
+  color: $color-main;
+  text-align: center;
+}
+
+
+.photos__content {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-left: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 40px;
+  background: $gray-light;
+
+  a {
+    color: $color-secondary;
+  }
+}
+
+.photos__auhor-foto {
+  margin: 0 auto;
+  width: 280px;
+  height: 140px;
+}
+
+.photos__auhor-name {
+  font-size: $font-size--small;
+  line-height: $font-size--big;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.photos__time {
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: $font-size--big;
+  text-transform: $text-transform;
+}
+
+.photos__list {
+  p {
+    @include reset;
+    margin-bottom: 10px;
+    font-size: $font-size--small;
+    line-height: $font-size--big;
+  }
+}
+
+.photos__like, photos__like-count {
+  padding-left: 32px;
+  font-size: 12px;
+  line-height: $font-size--big;
+  text-transform: $text-transform;
+}

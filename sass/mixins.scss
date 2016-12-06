@@ -1,0 +1,25 @@
+@mixin link() {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin hidden {
+  display: none;
+}
+
+@mixin form {
+  font-size: $font-size--small;
+  text-transform: $text-transform;
+  color: $color-secondary;
+}
+
+@mixin container {
+  width: 280px;
+  padding: 0 20px;
+}
