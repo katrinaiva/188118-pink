@@ -44,6 +44,7 @@
 }
 
 .photos__list {
+  @include reset;
   p {
     @include reset;
     margin-bottom: 10px;
