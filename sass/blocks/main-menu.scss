@@ -14,75 +14,60 @@
   padding-bottom: 10px;
 }
 
-.main-menu--opened .main-menu {
-  background-color: $color-main;
-}
-
-.main-menu--closed .main-menu__top {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-//все работает для проверки
-.main-menu--closed .main-menu__toggle {
+.main-menu__toggle {
   position: absolute;
   top: 20px;
   right: 20px;
   padding: 0;
-  order: 2;
+  z-index: 2;
   font-size: 0;
   border: none;
   display: block;
   width: 50px;
   height: 20px;
-  border-top: 2px solid $color-link;
-  border-bottom: 2px solid $color-link;
   outline: none;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.0);
 
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.0);
+  }
+  &:active {
+    background-color: rgba(0, 0, 0, 0.0);
+  }
+}
+
+.main-menu--closed .main-menu__toggle {
   &::before {
   content: "";
   position: absolute;
-  top: 7px;
+  top: 0;
   right: 0;
   width: 50px;
   height: 2px;
   background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff,
+              0 16px 0 0 #ffffff;
  }
 
   &:hover {
-    border-top: 2px solid $color-secondary;
-    border-bottom: 2px solid $color-secondary;
-
     &::before {
       background-color: $color-secondary;
+      box-shadow: 0 8px 0 0 $color-secondary,
+                  0 16px 0 0 $color-secondary;
     }
   }
 
   &:active {
-    border-top: 2px solid $btn-down;
-    border-bottom: 2px solid $btn-down;
-
     &::before {
       background-color: $btn-down;
+      box-shadow: 0 8px 0 0 $btn-down,
+                0 16px 0 0 $btn-down;
     }
   }
 }
 
 .main-menu--opened .main-menu__toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 0;
-  order: 2;
-  font-size: 0;
-  border: none;
-  width: 50px;
-  height: 20px;
-  outline: none;
-  cursor: pointer;
-  background-color: $color-main;
-
   &::before,
   &::after {
   content: "";
@@ -96,6 +81,7 @@
 
   &::before {
     transform: rotate(45deg);
+    box-shadow: none;
   }
 
   &::after {
@@ -103,17 +89,14 @@
   }
 
   &:hover {
-    background-color: 2px solid $color-secondary;
-
     &::before,
     &::after{
       background-color: $color-secondary;
+      box-shadow: none;
     }
   }
 
   &:active {
-    background-color: 2px solid $btn-down;
-
     &::before,
     &::after{
       background-color: $btn-down;
@@ -121,11 +104,44 @@
   }
 }
 
+@media (#{$mobile-widths-only}) {
+
+  .main-menu--closed .main-menu__list {
+    display: none;
+  }
+
+  .main-menu--closed .main-menu__top {
+  background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-menu--opened .main-menu__list {
+    display: block;
+  }
+
+//  .main-menu--opened .main-menu__top{
+//    background-color: none;
+//  }
+
+  .main-menu--opened .main-menu {
+  background-color: $color-main;
+  }
+
+  .main-menu--nojs .main-menu__toggle {
+    display: none;
+  }
+
+  .main-menu--nojs .main-menu__list {
+    display: block;
+  }
+//
+//  .main-menu--nojs .main-menu__top{
+//    background-color: none;
+//  }
+}
 
 .main-menu__lists {
     @include reset;
     list-style: none;
-    display: none;
   }
 
 .main-menu__list {
@@ -133,6 +149,7 @@
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
   text-align: center;
+  display: none;
 
   a {
     display: block;
@@ -179,22 +196,4 @@
   }
 }
 
-@media (#{$mobile-widths-only}) {
 
-  .main-menu--closed .main-menu__list {
-    display: none;
-  }
-
-  .main-menu--opened .main-menu__list {
-    display: block;
-  }
-
-  .main-menu--nojs .main-menu__toggle {
-    display: none;
-  }
-
-  .main-menu--nojs .main-menu__list {
-    display: block;
-  }
-
-}
