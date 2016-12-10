@@ -1,6 +1,24 @@
 .download-app {
-  background: #1d2631;
+//  width: 320px;
+//  height: 736px;
+  background: $color-main url(../img/bg-back-mobile@1x.jpg) no-repeat 50% -32%;
+  @include container;
+  margin: 0 auto;
 }
+
+.download-app__img {
+//  height: 736px;
+  padding-top: 110px;
+  margin-bottom: -10px;
+
+}
+
+.download-app__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 .download-app__link {
   text-align: center;
@@ -10,7 +28,7 @@
     @include link;
     margin-bottom: 35px;
     margin-top: 30px;
-    padding: 15px 0;
+    padding: 15px 8px;
     font-size: $font-size;
     line-height: $font-size;
 
@@ -25,9 +43,6 @@
   }
 }
 
-.download-app__title {
-  @include hidden;
-}
 
 .download-app__lists {
   text-align: center;
@@ -38,9 +53,53 @@
 }
 
 .download-app__text {
+  padding-bottom: 25px;
   font-size: $font-size--small;
   line-height: $font-size--big;
   font-weight: 300;
-  color: #5e6873;
+  color: $color-link;
   text-align: center;
+}
+
+.download-app__title {
+  display: block;
+  width: 190px;
+  margin-bottom: 0;
+  padding-top: 60px;
+  color: $color-link;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (min-width: $mobile-widths) and (max-width: $tablet-widths){
+  .download-app {
+  background: $color-main url(../img/bg-back-mobile@1x.jpg) no-repeat 50% -32%;
+}
+
+  .download-app__title {
+    display: none;
+  }
+
+
+  .download-app__wrapper {
+  background-color: #1d2631;
+  }
+}
+
+
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .download-app {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+
+  .download-app__title .visually-hidden {
+    display: block;
+  }
+
 }
