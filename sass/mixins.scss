@@ -37,7 +37,7 @@
 
 @mixin container() {
   width: 320px;
-//  padding: 0 20px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
     width: 620px;

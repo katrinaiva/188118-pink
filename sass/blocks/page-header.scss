@@ -1,11 +1,18 @@
 .page-header {
 //  display: flex;
 //  flex-direction: column;
+  background: $color-main url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0%;
+//  @include container();
+  width: 320px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
-  display: flex;
-  flex-direction: column;
+  .page-header {
+//    display: flex;
+//    flex-direction: column;
+    width: 660px;
+  }
 }
 
 .page-header__title {
