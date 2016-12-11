@@ -10,7 +10,7 @@
   </head>
   <body class="home">
     <header class="page-header">
-      <nav class="main-menu main-menu--closed main-menu--opened main-menu--nojs" >
+      <nav class="main-menu main-menu--opened main-menu--nojs" >
         <div class="main-menu__top">
           <img class="main-menu__logo" src="img/logotype-white-mobile.png" width="75" height="22" alt="Pink">
           <button class="main-menu__toggle" type="button"></button>
@@ -187,13 +187,18 @@
 
     mainmenu.classList.remove('main-menu--nojs');
 
+//    if (mainmenu.hasAttribute('main-menu--opened')){
+//      mainmenu.classList.add('main-menu--closed');
+//      mainmenu.classList.remove('main-menu--opened');
+//    }
+
     menuToggle.addEventListener('click', function() {
-      if (mainmenu.classList.contains('main-menu--closed')) {
-        mainmenu.classList.remove('main-menu--closed');
-        mainmenu.classList.add('main-menu--opened');
-      } else {
+      if (mainmenu.classList.contains('main-menu--opened')) {
         mainmenu.classList.add('main-menu--closed');
         mainmenu.classList.remove('main-menu--opened');
+      } else {
+        mainmenu.classList.add('main-menu--opened');
+        mainmenu.classList.remove('main-menu--closed');
       }
     });
   </script>
