@@ -1,6 +1,46 @@
+.forms {
+  display: flex;
+  flex-direction: column;
+//  align-items: center;
+}
+
 .forms__text {
-  font-size: $font-size--small;
-  line-height: $line-height;
+  display: block;
+  align-self: center;
+  @include reset;
+  margin-bottom: 69px;
+  padding-top: 95px;
+  font-size: 18px;
+  line-height: 30px;
   text-align: center;
-  padding: 40px 20px;
+
+  .visually-hidden {
+    display: inline-block;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: $tablet-widths) {
+  .forms__text {
+    width: 280px;
+    font-size: 14px;
+    padding: 40px 0;
+    margin-bottom: 0;
+
+    .visually-hidden {
+    display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .forms__text {
+    width: 505px;
+  }
+}
+
+@media (min-width: $desktop-widths){
+  .forms__text {
+    width: 760px;
+  }
 }
