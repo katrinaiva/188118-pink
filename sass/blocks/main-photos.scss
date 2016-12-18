@@ -1,5 +1,5 @@
-//.page-main {
-////  width: 320px;
+//.main-photos {
+//  width: 320px;
 //  margin: 0 auto;
 //  outline: 2px solid #252446;
 //}
@@ -11,10 +11,3 @@
 //@media (min-width: $desktop-widths) {
 //  width: 960px;
 //}
-
-.page-main {
-  @include container();
-  outline: 2px solid red;
-  display: flex;
-  flex-direction: column;
-}

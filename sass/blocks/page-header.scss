@@ -22,16 +22,18 @@
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .page-header {
-//    display: flex;
-//    flex-direction: column;
     width: 660px;
     margin: 0 auto;
   }
-
+}
+@media (min-width: $tablet-widths){
   .page-header__title {
     padding: 78px 75px;
     font-size: 50px;
     line-height: 60px;
+    &--large {
+      padding-bottom: 145px;
+    }
   }
 }
 @media (min-width: $desktop-widths) {
@@ -40,9 +42,11 @@
   }
 
   .page-header__title {
-    padding: 78px 75px;
-    font-size: 50px;
-    line-height: 60px;
+    &--large {
+      padding-top: 70px;
+      padding-bottom: 145px;
+      padding-left: 290px;
+      padding-right: 290px;
+    }
   }
 }
-
