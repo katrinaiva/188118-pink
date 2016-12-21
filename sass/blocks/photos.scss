@@ -84,7 +84,7 @@
 
 .photos__list {
   @include reset;
-   &--big {
+    &--big {
     width: auto;
   }
   p {

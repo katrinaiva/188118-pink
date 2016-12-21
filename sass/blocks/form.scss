@@ -262,8 +262,8 @@ align-self: center;
     }
 }
 
-   .form__info-label {
-  padding-left: 20px;
+  .form__info-label {
+    padding-left: 20px;
 }
 
 }
@@ -336,11 +336,11 @@ align-self: center;
 }
 }
 //
-   .form__crazy-wrapper, .form__app-wrapper {
+    .form__crazy-wrapper, .form__app-wrapper {
       display: flex;
       flex-direction: column;
       padding: 0 59px;
-     padding-bottom: 48px;
+      padding-bottom: 48px;
       box-sizing: border-box;
 
   }
@@ -401,7 +401,7 @@ align-self: center;
     margin: auto;
   }
 
-   .form__information-content {
+  .form__information-content {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 27px;
@@ -424,4 +424,3 @@ align-self: center;
     }
   }
 }
-
