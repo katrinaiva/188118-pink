@@ -1,9 +1,10 @@
 .page-header {
-  background: $color-main url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 120%;
-}
-
-.page-header__logo {
-  padding: 20px 20px;
+//  display: flex;
+//  flex-direction: column;
+  background: $color-main url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0%;
+  background-size: cover;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .page-header__title {
@@ -14,7 +15,38 @@
   padding-top: 36px;
   padding-bottom: 75px;
   font-size: $font-size--big;
-  font-weight: lighter;
+  font-weight: 300;
   color: $color-link;
   text-align: center;
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .page-header {
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: $tablet-widths){
+  .page-header__title {
+    padding: 78px 75px;
+    font-size: 50px;
+    line-height: 60px;
+    &--large {
+      padding-bottom: 145px;
+    }
+  }
+}
+@media (min-width: $desktop-widths) {
+  .page-header {
+    width: 960px;
+  }
+
+  .page-header__title {
+    &--large {
+      padding-top: 70px;
+      padding-bottom: 145px;
+      padding-left: 290px;
+      padding-right: 290px;
+    }
+  }
 }

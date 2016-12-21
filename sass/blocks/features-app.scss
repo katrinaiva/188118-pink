@@ -1,10 +1,21 @@
+.features-app__fon {
+  background: $gray-light;
+}
+
+.features-app__wrapper {
+  @include container();
+  outline: 2px solid red;
+}
 
 .features-app__texts {
+  @include container();
+  outline: 2px solid red;
   background: $color-link;
   color: $color-main;
 }
 
 .features-app__text {
+  margin: 0;
   padding: 5px 58px;
   font-size: $font-size--big;
   line-height: $font-size--big;
@@ -12,28 +23,200 @@
   text-align: center;
 }
 
+.features-app__text:first-child {
+  padding-top: 46px;
+}
+
+.features-app__text:last-child {
+  padding-top: 39px;
+  padding-bottom: 32px;
+}
+
 .features-app__lists {
   @include reset;
   list-style: none;
-  margin-bottom: 46px;
-  min-height: 788px;
-  background: #f2f2f2 url(/img/iphone-screen-mobile@1x.png) no-repeat 50% 100%;
+  padding-top: 82px;
+//  margin-bottom: 31px;
+//  min-height: 788px;
+//  background: url(/img/iphone-screen-mobile@1x.png) no-repeat 50% 100%;
   text-align: center;
+}
+
+.features-app__imgs {
+  text-align: center;
+//   background: url(/img/iphone-screen-mobile@1x.png) no-repeat 50% 100%;
+}
+
+.features-app__img {
+  &--hidden {
+    display: none;
+  }
 }
 
 .features-app__list-title {
   @include reset;
+  padding-bottom: 12px;
   color: #000000;
-  font-size: $font-size;
-  line-height: $font-size--big;
-
-  p {
-  color: $color-link;
-  font-size: $font-size--small;
-  line-height: $font-size--big;
-  }
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .features-app__list {
-  padding: 12px 25px;
+//  padding: 12px 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 31px;
+  p {
+    @include reset;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+//.features-app__study {
+//  @include container();
+//  outline: 2px solid red;
+//  &--hidden {
+//    display: none;
+//  }
+//}
+//
+//.features-app__study-title {
+//  font-size: 30px;
+//  line-height: 36px;
+//  font-weight: bold;
+//  p {
+//    font-size: 14px;
+//    line-height: 24px;
+//  }
+//}
+//
+//.features-app__study-link {
+//  font-size: 14px;
+//  line-height: 24px;
+//  color: $color-secondary;
+//}
+
+@media (min-width: $tablet-widths) {
+
+
+  .features-app__list{
+    padding-bottom: 38px;
+  }
+  .features-app__text {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .features-app__text:first-child {
+    padding-top: 56px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .features-app__text:last-child {
+    padding-top: 0px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 40px;
+  }
+
+//  .features-app__study {
+//    p {
+//      font-size: 14px;
+//      line-height: 30px;
+//    }
+//    &--hidden {
+//      display: block;
+//    }
+//}
+
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+    .features-app__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .features-app__lists {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .features-app__wrapper {
+    display: flex;
+    flex-direction: column;
+//    flex-direction: row;
+//    flex-wrap: wrap;
+  }
+
+  .features-app__lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+
+  }
+
+  .features-app__imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    order: -1;
+    width: 940px;
+    margin-bottom: 55px;
+  }
+
+  .features-app__list-title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  .features-app__list {
+    width: 240px;
+    padding: 0;
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  .features-app__text {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .features-app__text:first-child {
+    padding-top: 76px;
+  }
+
+  .features-app__text:last-child {
+    padding-bottom: 71px;
+  }
+
+  .features-app__img {
+    width: 240px;
+  &--hidden {
+    display: block;
+    }
+  }
+
+//  .features-app__study-title {
+//    font-size: 30px;
+//    line-height: 30px;
+//    font-weight: bold;
+//  }
+//    .features-app__study-title p {
+//      font-size: 18px;
+//      line-height: 30px;
+//    }
+
+
 }

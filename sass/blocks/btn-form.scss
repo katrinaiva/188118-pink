@@ -12,3 +12,18 @@
   outline: none;
   border-radius: 3px;
 }
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .btn-form {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .btn-form {
+    width: 300px;
+    &--big {
+      width: 460px;
+    }
+  }
+}

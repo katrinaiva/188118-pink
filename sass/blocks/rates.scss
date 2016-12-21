@@ -1,4 +1,7 @@
 .rates {
+  padding-bottom: 48px;
+  @include container();
+  outline: 1px solid red;
   background: $gray-light;
 }
 
@@ -6,30 +9,104 @@
   padding: 17px;
   background: $color-main;
   color: #ffffff;
-  text-transform: $text-transform;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  border: 1px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
 
   span {
     font-size: 24px;
     line-height: 30px;
-    font-weight: lighter;
+    font-weight: 300;
+  }
+}
+
+.rates-table__field {
+  padding: 14px;
+  padding-left: 22px;
+  color: $color-main;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: $color-link;
+  border: 2px solid $gray-input;
+}
+
+.rates-table {
+//  width: 720px;
+  margin-bottom: 34px;
+  border-collapse: collapse;
+}
+
+@media (max-width: $tablet-widths){
+  .rates-table {
+    width: 840px;
+    margin-left: -260px;
+  }
+
+  .rates-table--hidden {
+    display: none;
+  }
+
+  .rates-table__field {
+    width: 280px;
   }
 
 }
 
-.rates-table__field {
-  padding: 17px;
-  color: $color-main;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: $text-transform;
-  border: 1px solid #e5e5e5;
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .rates {
+  padding-bottom: 67px;
 }
 
-.rates-table {
-  width: 720px;
-  border-collapse: collapse;
+  .rates-table {
+    width: 620px;
+    margin-bottom: 0;
+  }
+
+  .rates-table__field {
+    width: 153px;
+    text-transform: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .rates__toggles-wrapper {
+    display: none;
+  }
+
+  .rates-table__value {
+    padding-top: 9px;
+    padding-bottom: 5px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .rates {
+  padding-bottom: 67px;
+}
+
+  .rates-table {
+    width: 940px;
+  }
+
+  .rates-table__field {
+    width: 234px;
+    text-transform: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 24px;
+    font-size: 18px;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .rates__toggles-wrapper {
+    display: none;
+  }
 }

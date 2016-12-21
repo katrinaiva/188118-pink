@@ -9,9 +9,6 @@
   padding: 0;
 }
 
-@mixin hidden {
-  display: none;
-}
 
 @mixin form {
   font-size: $font-size--small;
@@ -19,7 +16,18 @@
   color: $color-secondary;
 }
 
-@mixin container {
-  width: 280px;
-  padding: 0 20px;
+
+@mixin container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-widths){
+    width: 940px;
+    padding: 0 10px;
+  }
 }
