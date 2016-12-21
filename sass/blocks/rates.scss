@@ -24,6 +24,7 @@
 
 .rates-table__field {
   padding: 14px;
+  padding-left: 22px;
   color: $color-main;
   font-size: 14px;
   line-height: 30px;
@@ -41,7 +42,7 @@
 @media (max-width: $tablet-widths){
   .rates-table {
     width: 840px;
-    overflow: hidden;
+    margin-left: -260px;
   }
 
   .rates-table--hidden {
