@@ -4,7 +4,22 @@
 //  background: $color-main url(../img/bg-back-mobile@1x.jpg) no-repeat 50% -32%;
   @include container;
   margin: 0 auto;
+  background-repeat: no-repeat;
+
 }
+
+//@media (max-width: $tablet-widths) {
+//  .download-app__wrapper-img {
+//    background-image: url(/img/iphone-hand-mobile@1x.png);
+//  }
+//    @media (min-resolution: 144dpi),
+//          (min-resolution: 1.5dppx){
+//      .download-app__wrapper-img{
+//      background-image: url(/img/iphone-hand-mobile@2x.png);
+//      background-size: 258px auto;
+//    }
+//  }
+//}
 
 .download-app__img {
 //  height: 736px;
@@ -44,8 +59,13 @@
 
 
 .download-app__lists {
-  text-align: center;
+  width: 210px;
+  vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
+
 .download-app__list {
   display: inline-block;
   vertical-align: middle;
@@ -72,15 +92,23 @@
   text-align: center;
 }
 
-@media (min-width: $mobile-widths) and (max-width: $tablet-widths){
+@media (max-width: $tablet-widths){
   .download-app {
-//  background: $color-main url(../img/bg-back-mobile@1x.jpg) no-repeat 50% -32%;
-}
+    background-image: url(/img/iphone-hand-mobile@1x.png);
+    padding-top: 390px;
+    background-position: 0 110px;
+  }
+    @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx){
+      .download-app{
+      background-image: url(/img/iphone-hand-mobile@2x.png);
+      background-size: 258px auto;
+    }
+  }
 
   .download-app__title {
     display: none;
   }
-
 
   .download-app__wrapper {
   background-color: #1d2631;
@@ -93,22 +121,42 @@
     }
   }
 
-@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+@media (min-width: $tablet-widths) {
   .download-app {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
+}
 
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .download-app__title .visually-hidden {
     display: block;
+  }
+
+  .download-app {
+    background-image: url(/img/iphone-hand-tablet@1x.png);
+  }
+
+  @media (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx){
+    .download-app{
+    background-image: url(/img/iphone-hand-tablet@2x.png);
+    background-size: 700px auto;
+    }
   }
 }
 
 @media (min-width: $desktop-widths) {
   .download-app {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    background-image: url(/img/iphone-hand-desktop@1x.png);
+  }
+
+    @media (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx){
+    .download-app{
+    background-image: url(/img/iphone-hand-desktop@2x.png);
+    background-size: 1050px auto;
+    }
   }
 }

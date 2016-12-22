@@ -84,9 +84,9 @@
 
 .photos__list {
   @include reset;
-    &--big {
-    width: auto;
-  }
+//    &--big {
+//    width: ;
+//  }
   p {
     @include reset;
     margin-bottom: 10px;
@@ -118,6 +118,9 @@
     flex-direction: column;
     width: 300px;
     margin-bottom: 20px;
+    &--big {
+    width: auto;
+  }
   }
 
 

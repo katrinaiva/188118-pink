@@ -9,4 +9,10 @@
   font-size: 0;
   border: 3px solid $gray-light;
   border-radius: 50%;
+  vertical-align: top;
+  text-decoration: none;
+  &--tv {
+    background: url(/img/icon-twitter.svg) no-repeat center;
+    fill: red;
+  }
 }

@@ -1,6 +1,7 @@
 $mobile-widths: 320px;
 $tablet-widths: 660px;
 $desktop-widths: 960px;
+$retina: (min-resolution: 144dpi), (min-resolution: 1.5dppx);
 //$mobile-widths-only: "max-width: 699px";
 //$tablet-widths: "min-width: 700px";
 //$desktop-widths: "min-width: 1200px";
