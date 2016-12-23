@@ -11,8 +11,23 @@
   border-radius: 50%;
   vertical-align: top;
   text-decoration: none;
+  &:hover {
+    border: 3px solid $color-main;
+  }
+  &:active {
+    border: 3px solid $gray-light;
+  }
+
   &--tv {
     background: url(/img/icon-twitter.svg) no-repeat center;
-    fill: red;
+  }
+
+  &--fb {
+    background: url(
+    /img/icon-facebook.svg) no-repeat center;
+  }
+
+  &--yb {
+    background: url(/img/icon-youtube.svg) no-repeat center;
   }
 }

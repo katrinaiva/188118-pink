@@ -5,6 +5,8 @@
   position: relative;
 }
 
+
+
 .main-menu__top {
 //  position: relative;
   padding: 20px;
@@ -192,15 +194,41 @@
   }
 }
 
+@media (max-width: $tablet-widths) {
+  .main-menu__logo-tablet{
+    display: none;
+}
+  .main-menu__logo-desktop {
+    display: none;
+  }
+
+  .main-menu__logo-mobile:hover path {
+    fill: $color-secondary;
+}
+  .main-menu__logo-mobile:active path {
+    fill: $color-link--down;
+  }
+}
+
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .main-menu {
     width: 660px;
     min-height: 50px;
 }
+  .main-menu__logo-mobile{
+    display: none;
+  }
 
-  .main-menu__logo {
-    width: 147px;
-    height: 41px;
+  .main-menu__logo-desktop {
+    display: none;
+  }
+
+  .main-menu__logo-tablet:hover path {
+      fill: $color-secondary;
+  }
+
+  .main-menu__logo-tablet:active path {
+    fill: $color-link--down;
   }
 
   .main-menu__top {
@@ -225,9 +253,20 @@
     @include container();
     }
 
-  .main-menu__logo {
-    width: 147px;
-    height: 41px;
+  .main-menu__logo-tablet{
+    display: none;
+  }
+
+  .main-menu__logo-mobile{
+    display: none;
+  }
+
+  .main-menu__logo-desktop:hover path {
+      fill: $color-secondary;
+  }
+
+  .main-menu__logo-desktop:active path {
+    fill: $color-link--down;
   }
 
   .main-menu__wrapper {

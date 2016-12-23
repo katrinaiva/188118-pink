@@ -25,6 +25,8 @@
   }
 
   .study__title {
+    margin: 0;
+    padding-top: 102px;
     font-size: 30px;
     line-height: 36px;
     font-weight: bold;
@@ -38,6 +40,35 @@
   .study__hidden-des {
     display: none;
   }
+
+  .study__img {
+    position: relative;
+    padding-top: 59px;
+  }
+
+  .study__timer {
+    width: 238px;
+    height: 276px;
+    fill: #dedede;
+  }
+
+  .study__24 {
+    position: absolute;
+    top: 116px;
+    left: 20px;
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    text-align: center;
+    background-color: $color-link;
+    border: 13px solid $color-secondary;
+    border-radius: 50%;
+    font-size: 94px;
+    line-height: 160px;
+    color: $color-secondary;
+    font-weight: bold;
+  }
+
 }
 
 @media (min-width: $desktop-widths) {
@@ -46,12 +77,15 @@
     p {
       font-size: 18px;
       line-height: 30px;
-//      padding-right: 40px;
     }
   }
 
   .study__wrapper {
     width: 560px;
+    p {
+      margin: 0;
+      padding: 29px 0;
+    }
   }
 
   .study__link {
@@ -61,6 +95,7 @@
   }
 
   .study__title {
+    padding-top: 165px;
     font-size: 30px;
     line-height: 30px;
     font-weight: bold;
@@ -68,6 +103,28 @@
 
   .study__hidden {
     display: none;
+  }
+
+  .study__img {
+    position: relative;
+    padding-top: 65px;
+    padding-bottom: 68px;
+  }
+
+  .study__timer{
+    width: 300px;
+    height: 345px;
+  }
+
+  .study__24 {
+     top: 136px;
+    left: 24px;
+    width: 220px;
+    height: 220px;
+    border: 17px solid $color-secondary;
+    font-size: 120px;
+    line-height: 190px;
+
   }
 
   .study__hidden-des {

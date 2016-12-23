@@ -1,3 +1,6 @@
+//.page-footer {
+//  position: relative;
+//}
 .page-footer__title {
   color: $color-main;
   font-size: $font-size--big;
@@ -49,6 +52,18 @@
   display: none;
 }
 
+.page-footer__logo-htmlacademy {
+  vertical-align: middle;
+  fill: $color-secondary;
+  &:hover {
+    fill: $color-main;
+  }
+  &:active {
+    fill: $gray-dark;
+  }
+
+}
+
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths){
   .page-footer__map {
     width: 660px;
@@ -58,6 +73,24 @@
     font-size: 40px;
     line-height: 48px;
   }
+
+  .page-footer__text {
+    font: 14px;
+    line-height: 18px;
+  }
+
+  .page-footer__logo-desktop {
+    display: none;
+  }
+
+  .page-footer__logo-tablet:hover path  {
+    fill: $color-secondary;
+  }
+
+  .page-footer__logo-tablet:active path  {
+    fill: rgba(40, 54, 69, 0.3);
+  }
+
 }
 
 @media (min-width: $tablet-widths) {
@@ -65,6 +98,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+//    background: url(/img/bg-triangle-white-footer.svg) no-repeat;
   }
 
   .page-footer__phone, .page-footer__mail,
@@ -82,6 +116,21 @@
     justify-content: space-between;
     align-items: center;
     margin: 30px 0;
+  }
+
+  .page-footer__text {
+    padding-right: 14px;
+    vertical-align: middle;
+  }
+
+  .page-footer__maps {
+    position: relative;
+  }
+
+  .page-footer__fon {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -102,5 +151,22 @@
 
   .page-footer__contact {
     padding-top: 20px;
+  }
+
+  .page-footer__text {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .page-footer__logo-tablet{
+    display: none;
+  }
+
+  .page-footer__logo-desktop:hover path  {
+    fill: $color-secondary;
+  }
+
+   .page-footer__logo-desktop:active path  {
+    fill: rgba(40, 54, 69, 0.3);
   }
 }

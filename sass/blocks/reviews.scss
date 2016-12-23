@@ -4,6 +4,7 @@
 }
 
 .reviews__wrapper {
+  position: relative;
   padding-bottom: 30px;
   background: $color-link;
 }
@@ -82,6 +83,7 @@
 
   .reviews__list {
     padding-top: 188px;
+    background: url(/img/icon-quotes.svg) no-repeat center 72px;
   }
 
   .reviews__auhor-age {
@@ -97,7 +99,35 @@
     margin: 0 auto;
   }
 
+  .reviews__prev, .reviews__next {
+    position: absolute;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  .reviews__prev{
+    left: 0;
+    top: 200px;
+  }
+
+  .reviews__next{
+    right: 0;
+    top: 200px;
+  }
+
+  .reviews__icon {
+    fill: #bec2c7;
+    &:hover {
+      fill: #7e868f;
+    }
+    &:active {
+      fill: #bec2c7;
+    }
+  }
   .reviews-buttons {
     display: block;
+
   }
 }

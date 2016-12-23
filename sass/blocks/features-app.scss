@@ -1,10 +1,11 @@
 .features-app__fon {
   background: $gray-light;
+
 }
 
 .features-app__wrapper {
   @include container();
-  outline: 2px solid red;
+  background: url(/img/bg-triangle-white.svg) no-repeat -840px 0;
 }
 
 .features-app__texts {
@@ -36,18 +37,15 @@
   @include reset;
   list-style: none;
   padding-top: 82px;
-//  margin-bottom: 31px;
-//  min-height: 788px;
-//  background: url(/img/iphone-screen-mobile@1x.png) no-repeat 50% 100%;
   text-align: center;
 }
 
 .features-app__imgs {
   text-align: center;
-//   background: url(/img/iphone-screen-mobile@1x.png) no-repeat 50% 100%;
 }
 
 .features-app__img {
+//  margin-bottom: -9px;
   &--hidden {
     display: none;
   }
@@ -62,7 +60,6 @@
 }
 
 .features-app__list {
-//  padding: 12px 25px;
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 31px;
@@ -73,34 +70,19 @@
   }
 }
 
-//.features-app__study {
-//  @include container();
-//  outline: 2px solid red;
-//  &--hidden {
-//    display: none;
-//  }
-//}
-//
-//.features-app__study-title {
-//  font-size: 30px;
-//  line-height: 36px;
-//  font-weight: bold;
-//  p {
-//    font-size: 14px;
-//    line-height: 24px;
-//  }
-//}
-//
-//.features-app__study-link {
-//  font-size: 14px;
-//  line-height: 24px;
-//  color: $color-secondary;
-//}
+@media (max-width: $tablet-widths) {
+  .features-app__img img{
+    width: 158px;
+    height: 278px;
+    margin-bottom: -9px;
+  }
+
+}
 
 @media (min-width: $tablet-widths) {
-
-
-  .features-app__list{
+  .features-app__list {
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 38px;
   }
   .features-app__text {
@@ -121,16 +103,6 @@
     padding-bottom: 40px;
   }
 
-//  .features-app__study {
-//    p {
-//      font-size: 14px;
-//      line-height: 30px;
-//    }
-//    &--hidden {
-//      display: block;
-//    }
-//}
-
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
@@ -138,6 +110,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    background: url(/img/bg-triangle-white.svg) no-repeat -520px 0;
   }
 
   .features-app__lists {
@@ -146,14 +119,24 @@
     width: 310px;
     text-align: left;
   }
+
+  .features-app__imgs {
+    margin-top: 25px;
+
+  }
+
+  .features-app__img img {
+    width: 268px;
+    height: 480px;
+    margin-bottom: -9px;
+  }
 }
 
 @media (min-width: $desktop-widths) {
   .features-app__wrapper {
     display: flex;
     flex-direction: column;
-//    flex-direction: row;
-//    flex-wrap: wrap;
+    background: url(/img/bg-triangle-white.svg) no-repeat -220px 0;
   }
 
   .features-app__lists {
@@ -202,21 +185,13 @@
   }
 
   .features-app__img {
-    width: 240px;
+    img {
+      height: 302px;
+      width: 292px;
+    }
+
   &--hidden {
     display: block;
     }
   }
-
-//  .features-app__study-title {
-//    font-size: 30px;
-//    line-height: 30px;
-//    font-weight: bold;
-//  }
-//    .features-app__study-title p {
-//      font-size: 18px;
-//      line-height: 30px;
-//    }
-
-
 }

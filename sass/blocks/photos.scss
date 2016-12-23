@@ -23,6 +23,7 @@
 .photos__text {
   @include reset;
   padding: 45px 35px;
+  padding-top: 25px;
   font-size: 14px;
   line-height: 30px;
   color: $color-main;
@@ -46,6 +47,12 @@
 }
 
 .photos--like-wrapper {
+  i {
+    padding: 6px 7px;
+    background: url(/img/icon-heart.svg) no-repeat;
+  }
+  display: flex;
+  align-items:  center;
   color: $color-secondary;
 }
 
@@ -58,7 +65,7 @@
 
 .photos__img {
   width: 280px;
-  height: 140px;
+  height: 180px;
   padding-left: 20px;
   padding-right: 20px;
   &--big {
@@ -96,15 +103,10 @@
 }
 
 .photos__like, photos__like-count {
-  padding-left: 32px;
+  padding-left: 18px;
   font-size: 12px;
   line-height: 24px;
   text-transform: $text-transform;
-}
-
-.photos--like-wrapper {
-  display: flex;
-  align-items: baseline;
 }
 
 @media (min-width: $tablet-widths) {
@@ -142,10 +144,12 @@
     padding-right: 28px;
     &--top {
       justify-content: space-between;
-//      align-items: center;
     }
   }
 
+  .photos__like--top {
+    margin-right: 16px;
+  }
   .photos--like-wrapper {
     flex-direction: row-reverse;
     flex-grow: 1;
