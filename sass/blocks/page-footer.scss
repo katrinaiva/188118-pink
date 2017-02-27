@@ -1,9 +1,6 @@
-//.page-footer {
-//  position: relative;
-//}
 .page-footer__title {
   color: $color-main;
-  font-size: $font-size--big;
+  font-size: 24px;
   line-height: $line-height;
   font-weight: lighter;
   text-align: center;
@@ -11,11 +8,9 @@
 
 .page-footer__contact {
   color: $color-secondary;
-  font-size: $font-size--big;
+  font-size: 24px;
   line-height: $line-height;
   font-weight: 100;
-
-
   &--link {
     text-decoration: none;
   }
@@ -25,21 +20,33 @@
   text-align: center;
   b {
     color: $color-main;
-    font-size: $font-size;
+    font-size: 18px;
     font-weight: bold;
   }
 }
 
 .page-footer__copyright {
   text-align: center;
-  font-size: $font-size--small;
-  line-height: $font-size;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .page-footer__map {
   width: 320px;
   height: 219px;
   }
+
+.page-footer__maps {
+    position: relative;
+  }
+
+.page-footer__fon {
+  width: 320px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #ffffff;
+}
 
 .page-footer__phone, .page-footer__mail,
   .page-footer__address {
@@ -49,8 +56,17 @@
 }
 
 .page-footer__wrapper {
-  display: none;
+  &--hidden {
+    display: none;
+  }
+   @include container();
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
 }
+
 
 .page-footer__logo-htmlacademy {
   vertical-align: middle;
@@ -61,8 +77,19 @@
   &:active {
     fill: $gray-dark;
   }
-
 }
+
+.page-footer__logo-desktop {
+    display: none;
+  }
+
+  .page-footer__logo-tablet:hover path  {
+    fill: $color-secondary;
+  }
+
+  .page-footer__logo-tablet:active  {
+    opacity: 0.3;
+  }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths){
   .page-footer__map {
@@ -78,19 +105,6 @@
     font: 14px;
     line-height: 18px;
   }
-
-  .page-footer__logo-desktop {
-    display: none;
-  }
-
-  .page-footer__logo-tablet:hover path  {
-    fill: $color-secondary;
-  }
-
-  .page-footer__logo-tablet:active path  {
-    fill: rgba(40, 54, 69, 0.3);
-  }
-
 }
 
 @media (min-width: $tablet-widths) {
@@ -109,13 +123,9 @@
   }
 
   .page-footer__wrapper {
-    @include container();
-    display: block;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin: 30px 0;
   }
 
   .page-footer__text {
@@ -123,14 +133,9 @@
     vertical-align: middle;
   }
 
-  .page-footer__maps {
-    position: relative;
-  }
-
   .page-footer__fon {
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 660px;
+    height: 68px;
   }
 }
 
@@ -162,11 +167,24 @@
     display: none;
   }
 
+  .page-footer__logo-desktop {
+    display: block;
+  }
+
   .page-footer__logo-desktop:hover path  {
     fill: $color-secondary;
   }
 
-   .page-footer__logo-desktop:active path  {
-    fill: rgba(40, 54, 69, 0.3);
+//  .test:active path {
+//    fill: $color-main;
+//  }
+
+   .page-footer__logo-desktop:active path {
+      opacity: 0.3;
+  }
+
+  .page-footer__fon {
+    width: 960px;
+    height: 100px;
   }
 }

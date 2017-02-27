@@ -9,6 +9,7 @@
   &--down {
     &:hover {
       background-color: $color-link;
+      outline: none;
     }
 
     &:active {

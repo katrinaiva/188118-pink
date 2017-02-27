@@ -1,11 +1,8 @@
 .main-menu {
-//  width: 320px;
   min-height: 50px;
   margin: 0 auto;
   position: relative;
 }
-
-
 
 .main-menu__top {
 //  position: relative;
@@ -175,7 +172,6 @@
       right: 116px;
       left: 116px;
       bottom: 0;
-  //      width: 100%;
       height: 2px;
       background-color: $color-link;
     }
@@ -206,7 +202,8 @@
     fill: $color-secondary;
 }
   .main-menu__logo-mobile:active path {
-    fill: $color-link--down;
+    fill: $color-link;
+    opacity: 0.3;
   }
 }
 
@@ -227,8 +224,9 @@
       fill: $color-secondary;
   }
 
-  .main-menu__logo-tablet:active path {
-    fill: $color-link--down;
+  .main-menu__logo-tablet:active path{
+    fill: $color-link;
+    opacity: 0.3;
   }
 
   .main-menu__top {
@@ -237,8 +235,8 @@
     padding-bottom: 48px;
 }
   .main-menu__toggle {
-    top: 43px;
-    right: 21px;
+    top: 56px;
+    right: 41px;
   }
 }
 
@@ -266,7 +264,8 @@
   }
 
   .main-menu__logo-desktop:active path {
-    fill: $color-link--down;
+    fill: $color-link;
+    opacity: 0.3;
   }
 
   .main-menu__wrapper {
@@ -277,7 +276,6 @@
   .main-menu__lists {
     display: flex;
     flex-direction: row;
-//    align-items: center;
     justify-content: space-between;
     width: 625px;
   }
@@ -296,7 +294,7 @@
   .main-menu__top {
     align-self: center;
     padding: 0;
-
+    padding-bottom: 20px;
   }
 
   .main-menu__toggle {
