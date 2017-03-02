@@ -21,6 +21,15 @@
   padding-top: 48px;
   padding-bottom: 53px;
   background-color: $gray-light;
+   :hover {
+    background-color: #1c9b5e;
+  }
+  :active {
+    color: $color-link--down;
+  }
+  :disabled {
+    background-color: $gray-input;
+  }
 }
 
 .modal-ok__content {

@@ -18,6 +18,15 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 50px;
+  :hover {
+    background-color: #1c9b5e;
+  }
+  :active {
+    color: $color-link--down;
+  }
+  :disabled {
+    background-color: $gray-input;
+  }
 }
 
 .modal-error__content {
