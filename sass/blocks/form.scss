@@ -108,12 +108,13 @@
     color: $color-secondary;
   }
 
-.form__selection-input {
+
+.form__crazy-input, .form__app-input {
   display: none;
 }
 
-.form__selection-input {
-  &+.form__selection-label {
+.form__crazy-input {
+  &+.form__crazy-label {
     position: relative;
     display: block;
     padding-left: 70px;
@@ -123,37 +124,113 @@
     line-height: $line-height;
     color: $color-main;
     cursor: pointer;
+  }
+}
 
-
+.form__crazy-input {
+  &+.form__crazy-label {
     &::before {
       content: "";
       position: absolute;
       top: 10;
       left: 0;
-      width: 40px;
-      height: 40px;
-      background: url(/img/radio-checkbox.png) no-repeat;
+      width: 35px;
+      height: 35px;
+      background: $color-link;
+      border: 2px solid $gray-input;
+    }
+  }
+}
+.form__app-input {
+  &+.form__app-label {
+    position: relative;
+    display: block;
+    padding-left: 70px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color-main;
+    cursor: pointer;
+  }
+}
+
+.form__app-input {
+  &+.form__app-label {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10;
+      left: 0;
+      width: 35px;
+      height: 35px;
+      background: $color-link;
+      border: 2px solid $gray-input;
+      border-radius: 50%;
     }
   }
 }
 
-.form__selection-input {
+
+.form__crazy-input {
   &:checked {
-    &+.form__selection-label {
+    &+.form__crazy-label {
       &::before {
-        background: url(/img/radio-checkbox_hover.png) no-repeat;
+        background: $color-link url(../img/icon-yes-pink.svg) no-repeat 50% 50%;
       }
     }
   }
 }
 
-.form__selection-input {
+.form__app-input {
   &:checked {
-    &+.form__selection-label {
+    &+.form__app-label {
+      &::before {
+        background: $color-link url(../img/icon-map-marker.svg) no-repeat 50% 50%;
+      }
+    }
+  }
+}
+
+.form__crazy-input {
+    &+.form__crazy-label {
       &:hover{
         &::before {
-          background: $color-secondary url(/img/radio-checkbox_hover.png) no-repeat;
+          border: 2px solid $color-main;
         }
+      }
+  }
+}
+
+.form__crazy-input {
+  &:checked {
+    &+.form__crazy-label {
+      &:active{
+        &::before {
+          border: 2px solid $color-secondary;
+          }
+      }
+    }
+  }
+}
+
+.form__app-input {
+    &+.form__app-label {
+      &:hover{
+        &::before {
+          border: 2px solid $color-main;
+        }
+      }
+  }
+}
+
+.form__app-input {
+  &:checked {
+    &+.form__app-label {
+      &:active{
+        &::before {
+          border: 2px solid $color-secondary;
+          }
       }
     }
   }
@@ -206,7 +283,7 @@ align-self: center;
     padding: 0 20px;
   }
 
-  .form__crazy, form__app {
+  .form__crazy, .form__app {
     background-color: $gray-light;
     border-top: 1px solid $gray-light;
     margin-bottom: 10px;
