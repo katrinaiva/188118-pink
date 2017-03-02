@@ -15,7 +15,7 @@
     border: 3px solid $color-main;
   }
   &:active {
-    border: 3px solid $gray-light;
+    opacity: 0.3;
   }
 
   &--tv {

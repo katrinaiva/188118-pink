@@ -26,7 +26,7 @@
   border: none;
   display: block;
   width: 50px;
-  height: 20px;
+  height: 30px;
   outline: none;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.0);
@@ -62,9 +62,7 @@
 
   &:active {
     &::before {
-      background-color: $btn-down;
-      box-shadow: 0 8px 0 0 $btn-down,
-                0 16px 0 0 $btn-down;
+      opacity: 0.3;
     }
   }
 }
@@ -101,7 +99,7 @@
   &:active {
     &::before,
     &::after{
-      background-color: $btn-down;
+      opacity: 0.3;
     }
   }
 }
@@ -114,7 +112,7 @@
   }
 
   .main-menu--closed .main-menu__top {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .main-menu--opened .main-menu__list {
@@ -140,7 +138,6 @@
   }
 
 .main-menu__list {
-//  background: $color-main;
     border-top: 1px solid #485461;
     border-bottom: 1px solid #000000;
     text-align: center;
@@ -150,8 +147,8 @@
     display: block;
     padding: 12px 0;
     @include link;
-    font-size: $font-size;
-    line-height: $line-height + 8;
+    font-size: 18px;
+    line-height: 32px;
     text-transform: uppercase;
 
     &:hover {
@@ -159,38 +156,15 @@
     }
 
     &:active {
-    color: $color-link--down;
-    }
-  }
-
-  &--active {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: 116px;
-      left: 116px;
-      bottom: 0;
-      height: 2px;
-      background-color: $color-link;
-    }
-
-    &:hover {
-      &::after {
-        background-color: $color-link--hover;
-      }
-    }
-
-    a {
-      &:hover {
-        color: $color-link--hover;
-      }
+//    color: $color-link;
+      opacity: 0.3;
     }
   }
 }
 
 @media (max-width: $tablet-widths) {
+
+
   .main-menu__logo-tablet{
     display: none;
 }
@@ -288,7 +262,45 @@
       line-height: 18px;
       font-weight: normal;
       text-transform: none;
+      &:active {
+        color: $color-link;
+        opacity: 0.3;
+      }
     }
+    &--active {
+      border-bottom: 2px solid $color-link;
+//      position: relative;
+      &:hover {
+        border-bottom: 2px solid $color-secondary;
+      }
+
+      &:active {
+        border-bottom-color: rgba(0, 0, 0, 0.3);
+    }
+
+
+//    &::after {
+//      content: "";
+//      position: absolute;
+//      right: 80px;
+//      left: 80px;
+//      bottom: 0;
+//      height: 2px;
+//      background-color: $color-link;
+//    }
+//
+//    &:hover {
+//      &::after {
+//        background-color: $color-link--hover;
+//      }
+//    }
+//
+//    a {
+//      &:hover {
+//        color: $color-link--hover;
+//      }
+//    }
+  }
   }
 
   .main-menu__top {
