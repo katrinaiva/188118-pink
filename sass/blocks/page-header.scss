@@ -1,10 +1,15 @@
 .page-header {
-  background-color: $color-main;
-  background-repeat: no-repeat;
-  background-position: 50% 0%;
-//  background: $color-main url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0%;
+//  background-color: $color-main;
   width: 320px;
   margin: 0 auto;
+
+//  с другого кода
+  position: relative;
+  margin-bottom: -72px;
+  width: 100%;
+//  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+
 }
 
 .page-header__title {
@@ -21,31 +26,31 @@
 }
 
 
-@media (max-width: $tablet-widths) {
-  .page-header {
-    background-image: url(/img/bg-back-mobile@1x.jpg);
-  }
-    @media (min-resolution: 144dpi),
-          (min-resolution: 1.5dppx){
-      .page-header{
-      background-image: url(/img/bg-back-mobile@2x.jpg);
-      background-size: 700px auto;
-    }
-  }
-}
+//@media (max-width: $tablet-widths) {
+//  .page-header {
+//    background-image: url(/img/bg-back-mobile@1x.jpg);
+//  }
+//    @media (min-resolution: 144dpi),
+//          (min-resolution: 1.5dppx){
+//      .page-header{
+//      background-image: url(/img/bg-back-mobile@2x.jpg);
+//      background-size: 700px auto;
+//    }
+//  }
+//}
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .page-header {
     width: 660px;
     margin: 0 auto;
-    background-image: url(/img/bg-back-tablet@1x.jpg);
+//    background-image: url(/img/bg-back-tablet@1x.jpg);
   }
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      .page-header {
-        background-image: url(/img/bg-back-tablet@2x.jpg);
-        background-size: 1200px auto;
-      }
-    }
+//    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+//      .page-header {
+//        background-image: url(/img/bg-back-tablet@2x.jpg);
+//        background-size: 1200px auto;
+//      }
+//    }
 }
 
 @media (min-width: $tablet-widths){
@@ -62,14 +67,14 @@
 @media (min-width: $desktop-widths) {
   .page-header {
     width: 960px;
-    background-image: url(/img/bg-back-desktop@1x.jpg);
+//    background-image: url(/img/bg-back-desktop@1x.jpg);
   }
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      .page-header{
-        background-image: url(/img/bg-back-desktop@2x.jpg);
-        background-size: 2560px auto;
-      }
-    }
+//    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+//      .page-header{
+//        background-image: url(/img/bg-back-desktop@2x.jpg);
+//        background-size: 2560px auto;
+//      }
+//    }
 
   .page-header__title {
     &--large {
