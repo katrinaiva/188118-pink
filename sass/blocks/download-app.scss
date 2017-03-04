@@ -7,13 +7,6 @@
   height: 732px;
   }
 
-
-.download-app__img {
-//  height: 736px;
-  padding-top: 110px;
-  margin-bottom: -10px;
-}
-
 .download-app__wrapper {
   display: flex;
   flex-direction: column;
@@ -108,7 +101,7 @@
   }
 
   .download-app__wrapper {
-  background-color: #1d2631;
+  background-color: $color-main;
   }
 }
 
@@ -120,9 +113,16 @@
 
 @media (min-width: $tablet-widths) {
   .download-app {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    @include container;
+//    display: flex;
+//    flex-direction: row-reverse;
+//    justify-content: space-between;
+  }
+
+  .download-app__wrapper {
+    margin-top: 100px;
+    position: absolute;
+    top: 0;
   }
 }
 
@@ -132,6 +132,7 @@
   }
   .download-app {
     background: url(../img/bg-back-tablet@1x.jpg) center no-repeat;
+
   }
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .download-app {
@@ -139,22 +140,26 @@
         background-size: auto 729px;
       }
     }
-//  .download-app {
-//    background-image: url(/img/iphone-hand-tablet@1x.png);
-//  }
-//
-//  @media (min-resolution: 144dpi),
-//        (min-resolution: 1.5dppx){
-//    .download-app{
-//    background-image: url(/img/iphone-hand-tablet@2x.png);
-//    background-size: 700px auto;
-//    }
-//  }
+
+  .download-app__wrapper-img {
+    height: 729px;
+    background: url(../img/iphone-hand-tablet@1x.png) 100% 100% no-repeat;
+  }
+
+  @media (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx){
+    .download-app__wrapper-img {
+    background-image: url(../img/iphone-hand-tablet@2x.png);
+    background-size: 700px auto;
+    }
+  }
 }
 
 @media (min-width: $desktop-widths) {
   .download-app {
+    height: 853px;
     background: url(../img/bg-back-desktop@1x.jpg) center no-repeat;
+
   }
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .download-app {
@@ -163,15 +168,18 @@
       }
     }
 
-//  .download-app {
-//    background-image: url(/img/iphone-hand-desktop@1x.png);
-//  }
-//
-//    @media (min-resolution: 144dpi),
-//        (min-resolution: 1.5dppx){
-//    .download-app{
-//    background-image: url(/img/iphone-hand-desktop@2x.png);
-//    background-size: 1050px auto;
-//    }
-//  }
+  .download-app__wrapper-img  {
+    height: 645px;
+    position: relative;
+    top: 208px;
+    background: url(/img/iphone-hand-desktop@1x.png) 0 100% no-repeat;
+  }
+
+    @media (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx){
+    .download-app__wrapper-img {
+    background-image: url(/img/iphone-hand-desktop@2x.png);
+    background-size: 1050px auto;
+    }
+  }
 }

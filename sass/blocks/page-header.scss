@@ -25,35 +25,17 @@
   text-align: center;
 }
 
-
-//@media (max-width: $tablet-widths) {
-//  .page-header {
-//    background-image: url(/img/bg-back-mobile@1x.jpg);
-//  }
-//    @media (min-resolution: 144dpi),
-//          (min-resolution: 1.5dppx){
-//      .page-header{
-//      background-image: url(/img/bg-back-mobile@2x.jpg);
-//      background-size: 700px auto;
-//    }
-//  }
-//}
-
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .page-header {
     width: 660px;
     margin: 0 auto;
-//    background-image: url(/img/bg-back-tablet@1x.jpg);
   }
-//    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-//      .page-header {
-//        background-image: url(/img/bg-back-tablet@2x.jpg);
-//        background-size: 1200px auto;
-//      }
-//    }
 }
 
 @media (min-width: $tablet-widths){
+  .page-header {
+    margin-bottom: -110px;
+  }
   .page-header__title {
     padding: 78px 75px;
     font-size: 50px;
@@ -67,14 +49,7 @@
 @media (min-width: $desktop-widths) {
   .page-header {
     width: 960px;
-//    background-image: url(/img/bg-back-desktop@1x.jpg);
   }
-//    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-//      .page-header{
-//        background-image: url(/img/bg-back-desktop@2x.jpg);
-//        background-size: 2560px auto;
-//      }
-//    }
 
   .page-header__title {
     &--large {
