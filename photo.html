@@ -97,10 +97,12 @@
         </ul>
         </div>
       </nav>
-      <h1 class="page-header__title page-header__title--large">Фотографии пользователей</h1>
     </header>
     <main class="main-photos">
       <section class="photos">
+        <div class="photos__title-wrapper">
+        <h1 class="photos__title photos__title--large">Фотографии пользователей</h1>
+        </div>
         <p class="photos__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="photos__lists">
           <div class="photos__wrapper">
@@ -367,5 +369,26 @@
         </div>
       </div>
     </footer>
+    <script>
+    var mainmenu = document.querySelector('.main-menu');
+    var menuToggle = document.querySelector('.main-menu__toggle');
+
+    mainmenu.classList.remove('main-menu--nojs');
+
+//    if (mainmenu.hasAttribute('main-menu--opened')){
+//      mainmenu.classList.add('main-menu--closed');
+//      mainmenu.classList.remove('main-menu--opened');
+//    }
+
+    menuToggle.addEventListener('click', function() {
+      if (mainmenu.classList.contains('main-menu--opened')) {
+        mainmenu.classList.add('main-menu--closed');
+        mainmenu.classList.remove('main-menu--opened');
+      } else {
+        mainmenu.classList.add('main-menu--opened');
+        mainmenu.classList.remove('main-menu--closed');
+      }
+    });
+  </script>
   </body>
 </html>
