@@ -378,10 +378,10 @@
     }
   }
 
-  .form__information-content:last-child::before {
-    background: $gray-input url(../img/icon-mail.svg) no-repeat 50% 50%;
-    top: 2px;
-  }
+//  .form__information-content:last-child::before {
+//    background: $gray-input url(../img/icon-mail.svg) no-repeat 50% 50%;
+//    top: 2px;
+//  }
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
@@ -510,9 +510,9 @@
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 27px;
-    &::before {
-      top: 2px;
-    }
+//    &::before {
+//      top: 2px;
+//    }
   }
 
   .form__textarea {
