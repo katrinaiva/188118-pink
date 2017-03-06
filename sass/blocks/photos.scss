@@ -269,13 +269,13 @@
   }
 
     .photos__title-wrapper  {
-    background: $color-main url(../img/bg-back-mobile@1x.jpg) 50% 0 no-repeat;
+    background: $color-main url(../img/bg-back-tablet@1x.jpg) 50% 0 no-repeat;
   }
     @media (min-resolution: 144dpi),
           (min-resolution: 1.5dppx){
       .photos__title-wrapper  {
-      background-image: url(../img/bg-back-mobile@2x.jpg);
-      background-size: auto 461px;
+        background-image: url(../img/bg-back-tablet@2x.jpg);
+        background-size: auto 729px;
     }
   }
 }
