@@ -6,7 +6,7 @@
 
 .features-app__wrapper {
   @include container();
-  background: url(/img/bg-triangle-white.svg) no-repeat -840px 0;
+  background: url(/img/bg-triangle-white.svg) no-repeat -832px 0;
 }
 
 .features-app__texts {
@@ -19,25 +19,26 @@
 .features-app__text {
   margin: 0;
   padding: 5px 58px;
-  font-size: $font-size--big;
-  line-height: $font-size--big;
+  font-size: 24px;
+  line-height: 28px;
   font-weight: lighter;
   text-align: center;
 }
 
 .features-app__text:first-child {
-  padding-top: 46px;
+  padding-top: 42px;
 }
 
 .features-app__text:last-child {
-  padding-top: 39px;
+  padding-top: 27px;
   padding-bottom: 32px;
 }
 
 .features-app__lists {
   @include reset;
   list-style: none;
-  padding-top: 82px;
+  padding-top: 83px;
+  padding-bottom: -9px;
   text-align: center;
 }
 
@@ -46,6 +47,8 @@
 }
 
 .features-app__img {
+  position: relative;
+  top: 37px;
 //  margin-bottom: -9px;
   &--hidden {
     display: none;
@@ -61,9 +64,12 @@
 }
 
 .features-app__list {
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 31px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 34px;
+  &:last-child {
+    padding-bottom: 4px;
+  }
   p {
     @include reset;
     font-size: 14px;
@@ -71,11 +77,13 @@
   }
 }
 
+
+
 @media (max-width: $tablet-widths) {
   .features-app__img img{
     width: 158px;
-    height: 278px;
-    margin-bottom: -9px;
+//    height: 278px;
+    margin-bottom: -18px;
   }
 
 }

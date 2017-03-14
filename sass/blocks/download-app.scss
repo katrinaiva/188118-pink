@@ -4,7 +4,7 @@
 //  с другого
    position: relative;
   width: auto;
-  height: 732px;
+  height: 734px;
   }
 
 .download-app__wrapper {
@@ -20,8 +20,8 @@
     display: inline-block;
     vertical-align: middle;
     @include link;
-    margin-bottom: 35px;
-    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-top: 28px;
     padding: 15px 8px;
     font-size: $font-size;
     line-height: $font-size;
@@ -52,7 +52,7 @@
 }
 
 .download-app__text {
-  padding-bottom: 25px;
+//  padding-bottom: 25px;
   font-size: $font-size--small;
   line-height: $font-size--big;
   font-weight: 300;
@@ -85,7 +85,7 @@
   }
 
   .download-app__wrapper-img {
-    min-height: 462px;
+    min-height: 464px;
       background: url(../img/iphone-hand-mobile@1x.png) left bottom no-repeat;
     }
     @media (min-resolution: 144dpi),
@@ -107,7 +107,7 @@
 
   .download-app__link {
     a {
-      padding: 15px 0;
+      padding: 16px 0;
     }
   }
 

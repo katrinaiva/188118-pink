@@ -10,7 +10,7 @@
 }
 
 .rates-table__value {
-  padding: 17px;
+  padding: 18px;
   background: $color-main;
   color: #ffffff;
   text-transform: uppercase;
@@ -30,7 +30,7 @@
 
 .rates-table__field {
 //  width: 280px;
-  padding: 14px;
+  padding: 15px;
   padding-left: 22px;
   color: $color-main;
   font-size: 14px;
@@ -51,7 +51,7 @@
 }
 
 .rates-table {
-  margin-bottom: 34px;
+  margin-bottom: 42px;
   border-collapse: collapse;
 }
 
@@ -61,8 +61,8 @@
   &::before{
     content: "Хит";
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 11px;
+    left: 7px;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 30px;
@@ -73,14 +73,14 @@
 
 @media (max-width: $tablet-widths){
   .rates-table {
-    margin-top: 91px;
-    width: 1120px;
-    margin-left: -540px;
+    margin-top: 103px;
+    width: 1112px;
+    margin-left: -533px;
 //    overflow: hidden;
   }
 
   .rates__fon {
-    background: url(/img/bg-triangle-white.svg) no-repeat -820px 0;
+    background: url(/img/bg-triangle-white.svg) no-repeat -730px 0;
 }
 
 
@@ -90,10 +90,10 @@
 
   .rates-table__field {
     &--yes {
-    background-position: 90%;
+    background-position: 98% 60%;
   }
     &--no {
-    background-position: 90%;
+    background-position: 92%;
   }
   }
 }

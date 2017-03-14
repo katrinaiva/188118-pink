@@ -36,6 +36,9 @@
   &:active {
     border: 2px solid $color-secondary;
   }
+  &:focus {
+    border: 2px solid $color-secondary;
+  }
 
   p {
     text-align: center;
@@ -86,7 +89,8 @@
   padding-left: 30px;
   padding-right: 30px;
   line-height: $line-height;
-  text-align: center;
+//  text-align: center;
+  margin: 0 auto;
 }
 
 .form__textarea {
@@ -219,6 +223,8 @@
     }
   }
 }
+
+
 
 .form__app-input {
     &+.form__app-label {
@@ -378,10 +384,10 @@
     }
   }
 
-//  .form__information-content:last-child::before {
-//    background: $gray-input url(../img/icon-mail.svg) no-repeat 50% 50%;
+  .form__information-content:last-child::before {
+    background: $gray-input url(../img/icon-mail.svg) no-repeat 50% 50%;
 //    top: 2px;
-//  }
+  }
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
@@ -480,7 +486,7 @@
 
 
     .form__information-input {
-    width: 376px;
+    width: 375px;
     padding-right: 60px;
     order: 0;
   }
