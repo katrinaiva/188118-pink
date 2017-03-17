@@ -6,11 +6,13 @@
   display: inline-block;
   width: 45px;
   height: 45px;
+  margin-right: 11px;
   font-size: 0;
   border: 3px solid #e9ebec;
   border-radius: 50%;
   vertical-align: top;
   text-decoration: none;
+
   &:hover {
     border: 3px solid $color-main;
   }
@@ -30,4 +32,8 @@
   &--yb {
     background: url(/img/icon-youtube.svg) no-repeat center;
   }
+}
+
+.social-links:last-child {
+  margin-right: 5px;
 }

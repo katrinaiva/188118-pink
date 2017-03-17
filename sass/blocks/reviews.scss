@@ -1,6 +1,5 @@
 .reviews {
   @include container();
-  outline: 1px solid red;
 }
 
 .reviews__wrapper {
@@ -54,25 +53,28 @@
 }
 
 @media (min-width: $tablet-widths) {
+  .reviews-footer {
+    margin-bottom: 22px;
+  }
+
   .reviews__text {
     font-size: 18px;
   }
 
   .reviews__list {
-//  margin: 0;
-//  padding: 0;
-//  padding-top: 44px;
+  padding-top: 90px;
   padding-left: 0;
   padding-right: 0;
 }
 
   .reviews__auhor-age {
+    margin: 0;
     font-size: 14px;
     line-height: 30px;
 }
 
-  .reviews__auhor-age {
-    margin: 0;
+  .reviews__auhor-name {
+    font-size: 20px;
   }
 }
 

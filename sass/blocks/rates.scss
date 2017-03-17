@@ -1,6 +1,5 @@
 .rates {
   padding-bottom: 48px;
-  outline: 1px solid red;
   background-color: $gray-light;
 
 }
@@ -117,11 +116,11 @@
 
   .rates__fon {
     padding-top: 50px;
-    background: url(/img/bg-triangle-white.svg) no-repeat -520px 0;
+    background: url(/img/bg-triangle-white.svg) no-repeat -540px 0;
   }
 
   .rates-table {
-    margin-top: 41px;
+    margin-top: 28px;
     margin-bottom: 0;
     width: 620px;
   }
@@ -141,9 +140,13 @@
   }
 
   .rates-table__value {
-    padding-top: 9px;
-    padding-bottom: 5px;
+    padding-top: 13px;
+    padding-bottom: 7px;
     font-size: 16px;
+
+    span {
+      font-size: 18px;
+    }
   }
 
   .rates-table__value-hit {

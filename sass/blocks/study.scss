@@ -7,8 +7,9 @@
 @media (min-width: $tablet-widths) {
   .study {
     @include container();
-    outline: 2px solid red;
     p {
+      margin-top: 11px;
+      margin-bottom: 10px;
       padding-right: 10px;
       font-size: 14px;
       line-height: 24px;
@@ -26,7 +27,7 @@
 
   .study__title {
     margin: 0;
-    padding-top: 102px;
+    padding-top: 98px;
     font-size: 30px;
     line-height: 36px;
     font-weight: bold;
@@ -64,7 +65,7 @@
     border: 13px solid $color-secondary;
     border-radius: 50%;
     font-size: 94px;
-    line-height: 160px;
+    line-height: 168px;
     color: $color-secondary;
     font-weight: bold;
   }
