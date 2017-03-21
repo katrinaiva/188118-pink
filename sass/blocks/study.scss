@@ -82,10 +82,12 @@
   }
 
   .study__wrapper {
-    width: 560px;
+    width: 575px;
     p {
       margin: 0;
-      padding: 29px 0;
+      padding-top: 24px;
+      padding-bottom: 31px;
+//      padding: 16px 0;
     }
   }
 
@@ -96,7 +98,7 @@
   }
 
   .study__title {
-    padding-top: 165px;
+    padding-top: 156px;
     font-size: 30px;
     line-height: 30px;
     font-weight: bold;
@@ -109,7 +111,7 @@
   .study__img {
     position: relative;
     padding-top: 65px;
-    padding-bottom: 68px;
+    padding-bottom: 52px;
   }
 
   .study__timer{
@@ -118,13 +120,13 @@
   }
 
   .study__24 {
-     top: 136px;
+    top: 130px;
     left: 24px;
     width: 220px;
     height: 220px;
     border: 17px solid $color-secondary;
     font-size: 120px;
-    line-height: 190px;
+    line-height: 210px;
 
   }
 

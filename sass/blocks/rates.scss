@@ -160,12 +160,12 @@
 
 @media (min-width: $desktop-widths) {
   .rates {
-  padding-bottom: 67px;
+  padding-bottom: 52px;
 }
 
   .rates__fon {
     padding-top: 50px;
-    background: url(/img/bg-triangle-white.svg) no-repeat -220px 0;
+    background: url(/img/bg-triangle-white.svg) no-repeat -136px 0;
   }
 
   .rates-table {
@@ -181,7 +181,7 @@
     padding-left: 24px;
     font-size: 18px;
     vertical-align: middle;
-    text-align: center;
+//    text-align: center;
   }
 
   .rates__toggles-wrapper {

@@ -83,6 +83,9 @@
     min-height: 416px;
   }
 
+  .reviews__wrapper {
+    padding: 0;
+  }
   .reviews__list {
     padding-top: 188px;
     background: url(/img/icon-quotes.svg) no-repeat center 72px;
@@ -111,12 +114,12 @@
 
   .reviews__prev{
     left: 0;
-    top: 200px;
+    top: 214px;
   }
 
   .reviews__next{
     right: 0;
-    top: 200px;
+    top: 214px;
   }
 
   .reviews__icon {

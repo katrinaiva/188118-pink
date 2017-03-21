@@ -77,17 +77,15 @@
   }
 }
 
-
-
 @media (max-width: $tablet-widths) {
   .features-app__img {
     top: 37px;
-  }
-    &img {
-    width: 158px;
-    margin-bottom: -18px;
-  }
 
+    img {
+      width: 158px;
+      margin-bottom: -18px;
+    }
+  }
 }
 
 @media (min-width: $tablet-widths) {
@@ -145,6 +143,10 @@
 }
 
 @media (min-width: $desktop-widths) {
+  .features-app__fon {
+    margin-top: 36px;
+  }
+
   .features-app__wrapper {
     display: flex;
     flex-direction: column;
@@ -162,21 +164,39 @@
   .features-app__imgs {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     order: -1;
     width: 940px;
-    margin-bottom: 55px;
+    margin-bottom: 45px;
     margin-top: 25px;
   }
 
   .features-app__list-title {
+    padding-bottom: 25px;
     font-size: 30px;
     line-height: 30px;
     font-weight: bold;
+    }
+
+    .features-app__list:first-child .features-app__list-title {
+//      padding-left: 0px;
+    padding-right: 13px;
+    }
+
+  .features-app__list:last-child .features-app__list-title {
+      padding-left: 11px;
+    }
+
+  .features-app__list:first-child p {
+    padding-right: 11px;
   }
 
+   .features-app__list:last-child p {
+      padding-left: 13px;
+    }
+
   .features-app__list {
-    width: 240px;
+    width: 249px;
     padding: 0;
     p {
       font-size: 18px;
@@ -190,17 +210,19 @@
   }
 
   .features-app__text:first-child {
-    padding-top: 76px;
+    padding-top: 68px;
   }
 
   .features-app__text:last-child {
-    padding-bottom: 71px;
+    padding-bottom: 50px;
   }
 
   .features-app__img {
     img {
       height: 302px;
       width: 292px;
+      margin-left: 5px;
+      margin-top: -36px;
     }
 
   &--hidden {
