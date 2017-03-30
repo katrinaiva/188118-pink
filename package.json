@@ -1,7 +1,4 @@
 {
-  "name": "pink",
-  "version": "0.1.0",
-  "private": true,
   "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "0.1.x",
@@ -20,11 +17,6 @@
     "grunt-svgstore": "^1.0.0",
     "load-grunt-tasks": "^3.5.2"
   },
-  "scripts": {
-    "test": "editorconfig-cli",
-    "build": "grunt build",
-    "start": "npm run build && grunt serve"
-  },
   "editorconfig-cli": [
     "*.html",
     "*.json",
@@ -35,5 +27,12 @@
   ],
   "engines": {
     "node": "6.10"
-  }
+  },
+  "private": true,
+  "scripts": {
+    "build": "grunt build",
+    "start": "npm run build \u0026\u0026 grunt serve",
+    "test": "editorconfig-cli"
+  },
+  "version": "0.1.0"
 }
