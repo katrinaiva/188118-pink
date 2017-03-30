@@ -558,7 +558,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   width: 50px;
   height: 4px;
   background-color: #ffffff;
-  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff; }
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff; }
 
 .main-menu--closed .main-menu__toggle:hover::before {
   background-color: #d22856;
@@ -895,7 +895,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   .photos--like-wrapper i {
     margin-top: 12px;
     padding: 8px 7px;
-    background: url(/img/icon-heart.svg) no-repeat; }
+    background: url(../img/icon-heart.svg) no-repeat; }
 
 .photos__auhor-foto {
   margin: 0 auto;
@@ -1010,11 +1010,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   background-color: #ffffff;
   border: 2px solid #e5e5e5; }
   .rates-table__field--yes {
-    background-image: url(/img/icon-yes.svg);
+    background-image: url(../img/icon-yes.svg);
     background-repeat: no-repeat;
     background-position: center; }
   .rates-table__field--no {
-    background-image: url(/img/icon-no.svg);
+    background-image: url(../img/icon-no.svg);
     background-repeat: no-repeat;
     background-position: center; }
 
@@ -1100,11 +1100,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   .social-link:active {
     opacity: 0.3; }
   .social-link--tv {
-    background: url(/img/icon-twitter.svg) no-repeat center; }
+    background: url(../img/icon-twitter.svg) no-repeat center; }
   .social-link--fb {
-    background: url(/img/icon-facebook.svg) no-repeat center; }
+    background: url(../img/icon-facebook.svg) no-repeat center; }
   .social-link--yb {
-    background: url(/img/icon-youtube.svg) no-repeat center; }
+    background: url(../img/icon-youtube.svg) no-repeat center; }
 
 .social-links:last-child {
   margin-right: 5px; }
@@ -1121,19 +1121,19 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
-  src: local("Open Sans Light"), local("OpenSans-Light"), url("../../fonts/opensanslight.woff2") format("woff2"), url("../../fonts/opensanslight.woff") format("woff"); }
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff"); }
 
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url("../../fonts/opensans.woff2") format("woff2"), url("./../fonts/opensans.woff") format("woff"); }
+  src: local("Open Sans"), local("OpenSans"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff"); }
 
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../../fonts/opensansbold.woff2") format("woff2"), url("../../fonts/opensansbold.woff") format("woff"); }
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff"); }
 
 .visually-hidden {
   display: none; }
@@ -1142,13 +1142,13 @@ img {
   max-width: 100%;
   height: auto; }
 
-@media (min-width: 660px) and (min-width: 660px) and (max-width: 960px){
+@media (min-width: 660px) and (max-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (max-width: 960px) and (min-resolution: 144dpi), (min-width: 660px) and (max-width: 960px) and (min-resolution: 1.5dppx){
   .download-app{
-    width: 620px;
-    padding: 0 20px; }
-  .study{
-    width: 620px;
-    padding: 0 20px; } }
+    background-image: url(../img/bg-back-tablet@2x.jpg);
+    background-size: auto 729px; }
+  .download-app__wrapper-img{
+    background-image: url(../img/iphone-hand-tablet@2x.png);
+    background-size: 700px auto; } }
 
 @media (min-width: 660px) and (max-width: 960px){
   .page-header{
@@ -1156,6 +1156,8 @@ img {
     margin: 0 auto; }
   .btn-form{
     width: 300px; }
+  .download-app__wrapper{
+    margin-left: 20px; }
   .download-app__title .visually-hidden{
     display: block; }
   .download-app{
@@ -1388,20 +1390,9 @@ img {
     background-image: url(../img/bg-back-tablet@2x.jpg);
     background-size: auto 729px; } }
 
-@media (min-width: 660px) and (max-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (max-width: 960px) and (min-resolution: 144dpi), (min-width: 660px) and (max-width: 960px) and (min-resolution: 1.5dppx){
-  .download-app{
-    background-image: url(../img/bg-back-tablet@2x.jpg);
-    background-size: auto 729px; }
-  .download-app__wrapper-img{
-    background-image: url(../img/iphone-hand-tablet@2x.png);
-    background-size: 700px auto; } }
-
 @media (min-width: 660px){
   .page-header{
     margin-bottom: -110px; }
-  .download-app{
-    width: 320px;
-    margin: 0 auto; }
   .download-app__wrapper{
     width: 300px;
     margin-top: 112px;
@@ -1448,7 +1439,7 @@ img {
     content: "";
     position: absolute;
     right: 1px;
-    top: 3px;
+    top: 4px;
     width: 60px;
     height: 60px;
     background: #e5e5e5 url(../img/icon-phone.svg) no-repeat 50% 50%; }
@@ -1715,9 +1706,6 @@ img {
     line-height: 30px; }
   .reviews__auhor-name{
     font-size: 20px; }
-  .study{
-    width: 320px;
-    margin: 0 auto; }
   .study p{
     margin-top: 11px;
     margin-bottom: 10px;
@@ -1725,6 +1713,7 @@ img {
     font-size: 14px;
     line-height: 24px; }
   .study--hidden{
+    margin: 0 20px;
     display: block;
     display: -ms-flexbox;
     display: flex;
@@ -1769,20 +1758,12 @@ img {
     color: #d22856;
     font-weight: bold; } }
 
-@media (min-width: 660px) and (min-width: 960px){
-  .download-app{
-    width: 940px;
-    padding: 0 10px; }
-  .study{
-    width: 940px;
-    padding: 0 10px; } }
-
 @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx){
   .download-app{
     background-image: url(../img/bg-back-desktop@2x.jpg);
     background-size: auto 856px; }
   .download-app__wrapper-img{
-    background-image: url(/img/iphone-hand-desktop@2x.png);
+    background-image: url(../img/iphone-hand-desktop@2x.png);
     background-size: 1050px auto; }
   .forms__title-wrapper{
     background-image: url(../img/bg-back-desktop@2x.jpg);
@@ -1812,13 +1793,15 @@ img {
     margin-top: 34px;
     margin-bottom: 47px; }
   .download-app{
+    width: 940px;
+    padding: 0 10px;
     height: 853px;
     background: #283645 url(../img/bg-back-desktop@1x.jpg) center no-repeat; }
   .download-app__wrapper-img{
     height: 645px;
     position: relative;
     top: 208px;
-    background: url(/img/iphone-hand-desktop@1x.png) -15% 100% no-repeat; }
+    background: url(../img/iphone-hand-desktop@1x.png) -15% 100% no-repeat; }
   .features-app__wrapper{
     width: 940px;
     padding: 0 10px; }
@@ -1930,7 +1913,7 @@ img {
   .form__information-title{
     margin-bottom: 24px; }
   .form__information-content::before{
-    top: 6px; }
+    top: 7px; }
   .form__info-input{
     width: 341px;
     margin-top: 7px;
@@ -2216,7 +2199,7 @@ img {
     padding: 0; }
   .reviews__list{
     padding-top: 188px;
-    background: url(/img/icon-quotes.svg) no-repeat center 72px; }
+    background: url(../img/icon-quotes.svg) no-repeat center 72px; }
   .reviews__auhor-age{
     font-size: 18px; }
   .reviews__auhor-name{
@@ -2252,6 +2235,8 @@ img {
   .social-links:last-child{
     margin-right: 0; }
   .study{
+    width: 320px;
+    margin: 0 auto;
     background: #f2f2f2; }
   .study p{
     font-size: 18px;
@@ -2295,6 +2280,16 @@ img {
     padding: 0 10px; }
   .loading-photos{
     margin-bottom: 40px; } }
+
+@media (min-width: 960px) and (min-width: 660px) and (max-width: 960px){
+  .study{
+    width: 620px;
+    padding: 0 20px; } }
+
+@media (min-width: 960px) and (min-width: 960px){
+  .study{
+    width: 940px;
+    padding: 0 10px; } }
 
 @media (max-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 660px) and (min-resolution: 144dpi), (max-width: 660px) and (min-resolution: 1.5dppx){
   .download-app{
