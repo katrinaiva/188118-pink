@@ -1,0 +1,27 @@
+.page-header {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: -66px;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .page-header {
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-widths) {
+  .page-header {
+    margin-bottom: -110px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .page-header {
+    width: 960px;
+  }
+}

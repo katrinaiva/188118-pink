@@ -1,0 +1,10 @@
+.loading-photos {
+  @include container();
+  background-color: $gray-light;
+}
+
+@media (min-width: 960px) {
+  .loading-photos {
+    margin-bottom: 40px;
+  }
+}
