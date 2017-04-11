@@ -74,7 +74,7 @@
 
 @media (min-width: $desktop-widths) {
   .study {
-    @include container();
+//    @include container();
     background: $gray-light;
     p {
       font-size: 18px;
