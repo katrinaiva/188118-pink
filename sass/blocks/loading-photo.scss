@@ -190,11 +190,6 @@
     flex-direction: row;
     justify-content: space-between;
   }
-
-  .loading-photo__btns {
-    margin-top: auto;
-    padding: 0;
-  }
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
@@ -221,6 +216,8 @@
   }
 
   .loading-photo__btns {
+    margin-top: auto;
+    padding: 0;
     padding-left: 28px;
   }
 }
@@ -254,6 +251,11 @@
 
   .loading-photo__btn {
     width: 183px;
+  }
+
+  .loading-photo__btns {
+    margin-top: auto;
+    padding: 0;
   }
 
   .loading-photo__lists {

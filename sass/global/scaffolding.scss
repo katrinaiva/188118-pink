@@ -6,3 +6,43 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
+input[placeholder] {
+  text-overflow:ellipsis;
+}
+input::-moz-placeholder {
+  text-overflow:ellipsis;
+}
+input:-moz-placeholder {
+  text-overflow:ellipsis;
+}
+input:-ms-input-placeholder {
+  text-overflow:ellipsis;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+input:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+textarea:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+textarea::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+textarea:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
