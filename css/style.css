@@ -1143,6 +1143,42 @@ img {
   max-width: 100%;
   height: auto; }
 
+input[placeholder] {
+  text-overflow: ellipsis; }
+
+input::-moz-placeholder {
+  text-overflow: ellipsis; }
+
+input:-moz-placeholder {
+  text-overflow: ellipsis; }
+
+input:-ms-input-placeholder {
+  text-overflow: ellipsis; }
+
+input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6); }
+
+input:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6); }
+
+input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6); }
+
+input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6); }
+
+textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6); }
+
+textarea:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6); }
+
+textarea::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6); }
+
+textarea:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6); }
+
 @media (min-width: 320px){
   .download-app{
     width: auto;
@@ -1278,6 +1314,8 @@ img {
     width: 260px;
     margin-top: 18px; }
   .loading-photo__btns{
+    margin-top: auto;
+    padding: 0;
     padding-left: 28px; }
   .main-menu{
     width: 660px;
@@ -1332,7 +1370,7 @@ img {
     padding-top: 94px;
     padding-bottom: 75px;
     padding-left: 100px;
-    padding-right: 100px; }
+    padding-right: 98px; }
   .photos__text--down{
     padding-top: 48px;
     padding-bottom: 66px; }
@@ -1455,7 +1493,7 @@ img {
     content: "";
     position: absolute;
     right: 1px;
-    top: 3px;
+    top: 4px;
     width: 60px;
     height: 60px;
     background: #e5e5e5 url(../img/icon-phone.svg) no-repeat 50% 50%; }
@@ -1546,9 +1584,6 @@ img {
     flex-direction: row;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-  .loading-photo__btns{
-    margin-top: auto;
-    padding: 0; }
   .modal-error{
     left: 50%;
     right: 50%;
@@ -1939,7 +1974,7 @@ img {
   .form__information-title{
     margin-bottom: 24px; }
   .form__information-content::before{
-    top: 6px; }
+    top: 7px; }
   .form__info-input{
     width: 341px;
     margin-top: 7px;
@@ -2021,6 +2056,9 @@ img {
     right: 144px; }
   .loading-photo__btn{
     width: 183px; }
+  .loading-photo__btns{
+    margin-top: auto;
+    padding: 0; }
   .loading-photo__lists{
     height: 186px;
     margin-top: -2px;
